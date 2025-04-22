@@ -1,0 +1,363 @@
+/* Estilo geral */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: #fff9ea;
+}
+
+#home {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 20px 8%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+    padding: 0;
+}
+
+#home {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px 8%;
+}
+
+/* Hero Section */
+#hero {
+    flex: 1 1 60%;
+    text-align: left;
+    padding: 0px;
+}
+
+#hero {
+    background-image: url(/public/img/blob-path-01.png);
+    background-size: 700px;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+}
+
+#hero h1 {
+    padding: 10px 0px;
+    font-size: 3.5em;
+    margin-bottom: 20px;
+}
+
+#hero-image {
+    width: 100%;
+    max-width: 700px;
+}
+
+#hero-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: box-shadow 0.3s;
+}
+
+.image-button {
+    text-decoration: none;
+    color: inherit;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+.image-button:hover img {
+    box-shadow: 0 0 20px 2px #e9a209;
+}
+
+.image-button h1 {
+    color: #1d1d1d
+}
+
+.image-button:hover h1,
+.image-button:hover img {
+    transform: scale(1.05);
+    transition: .2s;
+    color: #e9a209;
+}
+
+/* Artigos em alta */
+#banner {
+    flex: 1 1 30%;
+    padding: 20px;
+}
+
+.artigo h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.img-container {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    width: 100%;
+}
+
+.artigo-feat img {
+    width: 380px;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+}
+
+.artigo-feat h5 {
+    font-size: 15px;
+    margin: 10px 30px 0px 0px;
+
+}
+
+.artigo-feat:hover img,
+.artigo-feat:hover h5 {
+    transform: scale(1.04);
+    transition: .2s;
+    color: #e9a209;
+}
+
+.art-button {
+    text-decoration: none;
+    color: inherit;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* calma */
+
+#cta .subtitle {
+    font-size: 18px;
+    color: #1d1d1d;
+}
+
+#cta .subtitle span {
+    font-size: 20px;
+    color: #e9a209;
+}
+
+/* Comidas fáceis */
+#container {
+    flex: 1 1 100%;
+    padding: 40px 10px 0px 0px;
+}
+
+#container h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.menu-item {
+    padding: 0px;
+    text-align: left;
+}
+
+.menu-item img {
+    width: 170px;
+    height: auto;
+    border-radius: 2px;
+}
+
+.menu-button h4 {
+    font-size: 15px;
+    margin-top: 0px;
+}
+
+.menu-button {
+    text-decoration: none;
+    color: inherit;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.menu-item:hover img,
+.menu-item:hover h4 {
+    transform: scale(1.04);
+    transition: .2s;
+    color: #e9a209;
+}
+
+
+
+/* Responsividade */
+
+@media screen and (max-width: 1170px) {
+    #home {
+        display: block;
+        min-height: auto;
+        padding: 10px;
+        margin: 0 auto;
+        max-width: 800px;
+    }
+
+    #hero {
+        display: flex;
+        flex-direction: column;
+        background: none;
+        margin: 0 auto;
+        padding: 0;
+        align-items: center;
+        width: 100%;
+    }
+
+    #cta {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #cta .subtitle {
+        font-size: 14px;
+        text-align: center;
+        margin-bottom: 10px;
+        width: fit-content;
+    }
+
+    #cta .subtitle span {
+        font-size: 16px;
+    }
+
+    #hero h1 {
+        font-size: 28px;
+        margin: 15px auto;
+        line-height: 1.2;
+        text-align: center;
+        width: fit-content;
+    }
+
+    #hero-image {
+        width: 100%;
+        margin: 10px auto;
+        padding: 0;
+    }
+
+    #hero-image img {
+        width: 100%;
+        height: auto;
+        max-width: none;
+        border-radius: 10px;
+    }
+
+    #banner {
+        width: 100%;
+        max-width: 800px;
+        padding: 0;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .artigo h4 {
+        margin: 10px 0;
+    }
+
+    .artigo-feat {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .artigo-feat img {
+        width: 100%;
+        height: auto;
+        max-width: 380px;
+        margin: 0 auto;
+    }
+
+    .artigo-feat h5 {
+        margin: 15px 0;
+        text-align: center;
+        max-width: 380px;
+    }
+
+    #container {
+        width: 100%;
+        max-width: 800px;
+        padding: 20px 0;
+        margin: 0 auto;
+    }
+
+    .menu {
+        grid-template-columns: repeat(2, 1fr);      
+        gap: 20px;
+        width: 100%;
+    }
+
+    .menu-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-item img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .menu-button h4 {
+        text-align: center;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #home {
+        padding: 10px;
+    }
+
+    #hero h1 {
+        font-size: 24px;
+    }
+
+    #cta .subtitle {
+        font-size: 13px;
+    }
+
+    #cta .subtitle span {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #hero h1 {
+        font-size: 22px;
+    }
+
+    #cta .subtitle {
+        font-size: 12px;
+    }
+
+    #cta .subtitle span {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1170px) {
+    #cta{
+        padding-top: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #cta h1 {
+        margin: 20px;
+        font-size: 30px;
+    }
+
+}

@@ -1,0 +1,156 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff9ea;
+}
+
+header {
+    width: 100%;
+    padding: 20px 0%;
+}
+
+#navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#nav-logo {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    color: #e9a209;
+    cursor: pointer;
+}
+
+#nav-logo:hover {
+  transform: scale(1.06);
+  transition: .2s;
+}
+
+#nav-logo img {
+  width: 40px;
+  height: auto;
+}
+
+#nav-list {
+    display: flex;
+    list-style: none;
+    gap: 48px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #1d1d1dad;
+    font-weight: 600;
+    display: inline-block;
+    transition: .2s;
+}
+
+
+.nav-item.active a {
+    color: #1d1d1d;
+    border-bottom: 3px solid #e9a209;
+}
+
+header a:hover{
+    color: #1d1d1d;
+    transform: scale(1.05);
+}
+/* BOTÂO DE PESQUISA */
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+  }
+  
+  .search__input {
+    font-family: inherit;
+    font-size: inherit;
+    background-color: #f4f2f2;
+    border: none;
+    color: #646464;
+    padding: 0.7rem 1rem;
+    border-radius: 30px;
+    width: 12em;
+    transition: all ease-in-out .5s;
+    margin-right: -2rem;
+  }
+  
+  .search__input:hover, .search__input:focus {
+    box-shadow: 0 0 1em #00000013;
+  }
+  
+  .search__input:focus {
+    outline: none;
+    background-color: #f0eeee;
+  }
+  
+  .search__input::-webkit-input-placeholder {
+    font-weight: 100;
+    color: #ccc;
+  }
+  
+  .search__input:focus + .search__button {
+    background-color: #f0eeee;
+  }
+  
+  .search__button {
+    border: none;
+    background-color: #f4f2f2;
+    margin-top: .1em;
+  }
+  
+  .search__button:hover {
+    cursor: pointer;
+  }
+  
+  .search__icon {
+    height: 1.3em;
+    width: 1.3em;
+    fill: #b4b4b4;
+  }
+
+/* responsividade */
+#mobile-btn {
+  display: none;
+}
+
+#mobile-menu {
+  display: none;
+}
+
+@media screen and (max-width: 1170px) {
+  #nav-list, #btn-search {
+    display: none;
+  }
+  #mobile-btn {
+    display: block;
+    border: none;
+    background-color: transparent;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  #mobile-menu.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #mobile-nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 12px 0px;
+  }
+  #mobile-nav-list .nav-item {
+    list-style: none;
+    text-align: center;
+  }
+}

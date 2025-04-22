@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Master</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <!-- BOOTSTRAP Navbar -->
+    <nav id="navbar" class="navbar navbar-expand-lg">
+        <div class="container">
+            <a id="nav-logo" class="navbar-brand d-flex align-items-center" href="#">
+                <img src="./img/chili-pepper-unscreen.gif" alt="Logo">
+                <span style="color:#e9a209;">RECIPE MASTER</span>
+            </a>
+            
+            <!-- BOOTSTRAP Flexbox -->
+            <form class="d-flex search">
+                <input class="form-control me-2 search__input" type="search" placeholder="Receitas">
+                <button class="btn search__button" type="submit">
+                    <i class="fas fa-search search__icon"></i>
+                </button>
+            </form>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul id="nav-list" class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#destaques">Destaques</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">Cardápio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Avaliações</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Seção de Destaques com Carrossel -->
+        <section id="destaques" class="py-5">
+            <div class="container">
+                <p class="text-center fs-5 mb-2">Bem-vindo à <span style="color: #e9a209;">Cozinha</span></p>
+                <h2 class="text-center section-subtitle mb-5"><span style="color: #e9a209;">Receitas</span> em Destaque</h2>
+                <div id="carouselDestaques" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselDestaques" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselDestaques" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Próximo</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Todos os Itens -->
+        <section id="todos-itens" class="py-5">
+            <div class="container">
+                <h2 class="text-center section-title">Todas as Receitas</h2>
+                <h3 class="text-center section-subtitle mb-5">Sabores autênticos</h3>
+                <div class="row g-4" id="todos-itens-container">
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Menu -->
+        <section id="menu" class="py-5">
+            <div class="container">
+                <h2 class="text-center section-title">Cardápio</h2>
+                <h3 class="text-center section-subtitle mb-5">Pratos em alta</h3>
+
+                <div class="row g-4 justify-content-center">
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="card dish h-100">
+                            <a href="detalhes.html?id=8" class="stretched-link"></a>
+                            <div class="dish-heart">
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <img src="./img/dish.png" class="dish-image" alt="Bowl asiático">
+                            <div class="card-body">
+                                <h3 class="dish-title">Bowl asiático</h3>
+                                <p class="dish-description">
+                                    Peixe cru, camarão, frango empanado, tomate-cereja, cebola roxa e arroz.
+                                </p>
+                                <div class="dish-rate">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <span>(500+)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="card dish h-100">
+                            <a href="detalhes.html?id=9" class="stretched-link"></a>
+                            <div class="dish-heart">
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <img src="./img/dish2.png" class="dish-image" alt="Misto quente">
+                            <div class="card-body">
+                                <h3 class="dish-title">Misto quente</h3>
+                                <p class="dish-description">
+                                    Pão de forma, presunto, frango desfiado, queijo, tomate e orégano.
+                                </p>
+                                <div class="dish-rate">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <span>(500+)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="card dish h-100">
+                            <a href="detalhes.html?id=10" class="stretched-link"></a>
+                            <div class="dish-heart">
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <img src="./img/dish3.png" class="dish-image" alt="Smoothie de kiwi">
+                            <div class="card-body">
+                                <h3 class="dish-title">Smoothie de kiwi</h3>
+                                <p class="dish-description">
+                                    Banana, leite vegetal, decorado com morangos, kiwi e lascas de coco.
+                                </p>
+                                <div class="dish-rate">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <span>(500+)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="card dish h-100">
+                            <a href="detalhes.html?id=11" class="stretched-link"></a>
+                            <div class="dish-heart">
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <img src="./img/dish4.png" class="dish-image" alt="Yakisoba">
+                            <div class="card-body">
+                                <h3 class="dish-title">Yakisoba</h3>
+                                <p class="dish-description">
+                                    Lámem, camarão, cenoura, brócolis, cebola, molho shoyu e óleo de gergelim.
+                                </p>
+                                <div class="dish-rate">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <span>(500+)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Menu Dinâmico -->
+        <section id="menu-dinamico" class="py-5">
+            <div>
+                <h2 class="text-center section-title">
+                    <span style="color: black;">Para os</span> <span style="color: #e9a209;">frangarianos.</span>
+                </h2>
+                <div class="row g-4 justify-content-center" style="margin-top: 20px;">
+                    <!-- Será preenchido dinamicamente via JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Testimonials -->
+        <section id="testimonials" class="py-5">
+            <div class="container">
+                <div class="testi">
+                    <div class="head text-center mb-5">
+                        <h3>O que nossos clientes dizem</h3>
+                    </div>
+                    
+                    <div class="wrapper">
+                        <div class="foto">
+                            <img src="./img/pessoa2.jpg" alt="Foto do cliente">
+                        </div>
+                        <div class="review">
+                            <p>"As receitas são incríveis! Fáceis de seguir e o resultado sempre fica perfeito."</p>
+                            <div class="dish-rate">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <h4>Emanuel da Cruz</h4>
+                            <span>Sous chef</span>
+                        </div>
+                    </div>
+
+                    <div class="wrapper">
+                        <div class="foto">
+                            <img src="./img/pessoa5.jpg" alt="Foto do cliente">
+                        </div>
+                        <div class="review">
+                            <p>"Ótimas receitas para quem está começando na cozinha. Muito bem explicadas!"</p>
+                            <div class="dish-rate">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <h4>Maria Silva</h4>
+                            <span>Estudante</span>
+                        </div>
+                    </div>
+
+                    <div class="wrapper">
+                        <div class="foto">
+                            <img src="./img/pessoa1.jpg" alt="Foto do cliente">
+                        </div>
+                        <div class="review">
+                            <p>"Site incrível! As receitas são práticas e deliciosas. Recomendo muito!"</p>
+                            <div class="dish-rate">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <h4>João Santos</h4>
+                            <span>Chef amador</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Sobre -->
+        <section id="sobre" class="py-5">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-md-6 text-center">
+                        <h2 class="mb-4">Sobre o <span style="color: #e9a209;">Desenvolvedor</span></h2>
+                        <p>Boas vindas Cozinheiro(a)! Sou Thiago Grandim, estudante de Sistemas de Informação na PUC Minas.</p>
+                        <p>Este projeto foi desenvolvido como parte de um trabalho da disciplina de Desenvolvimento Web,
+                           utilizei de HTML, CSS, JavaScript e Bootstrap para criar uma experiência
+                           interativa e responsiva, com o intuito de ajudar futuros cozinheiros a aprenderem mais sobre a 
+                           arte da culinária.</p>
+                        <div class="social-links mt-4">
+                            <a href="https://wa.me/5531982465473" class="me-3"><i class="fab fa-whatsapp"></i></a>
+                            <a href="mailto:thiagograndim.m@gmail.com" class="me-3"><i class="far fa-envelope"></i></a>
+                            <a href="https://www.instagram.com/thiaguinnl/" class="me-3"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <img src="./img/fotominha.jpeg" alt="Foto do Desenvolvedor" class="img-fluid rounded" style="max-width: 350px;">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container d-flex justify-content-center align-items-center">
+            <p class="mb-0 text-center">&copy; 2024 Recipe Master. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="./app.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            carregarDestaques();
+            carregarTodasReceitas();
+            exibirCards();
+        });
+    </script>
+</body>
+</html>

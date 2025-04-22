@@ -1,0 +1,751 @@
+/* Variáveis */
+:root {
+    --primary-color: #e9a209;
+    --secondary-color: #333;
+    --background-color: #fff9ea;
+    --text-color: #212529;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+/* Navbar */
+#navbar {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 1rem 0;
+}
+
+#navbar .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+#nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#nav-logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+#nav-logo span {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--primary-color);
+}
+
+#nav-list {
+    gap: 2rem;
+}
+
+.nav-link {
+    color: var(--secondary-color);
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--primary-color);
+}
+
+.search {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search__input {
+    border: none;
+    border-radius: 20px;
+    padding: 0.5rem 2.5rem 0.5rem 1rem;
+    background: #f5f5f5;
+    width: 200px;
+}
+
+.search__button {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    color: var(--primary-color);
+}
+
+.search__button:hover {
+    color: var(--secondary-color);
+}
+
+.search__icon {
+    height: 1.3em;
+    width: 1.3em;
+    fill: #b4b4b4;
+}
+
+/* Estilo do botão toggle */
+.navbar-toggler {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    margin-left: 15px;
+}
+
+.navbar-toggler:hover {
+    background-color: var(--primary-color);
+}
+
+.navbar-toggler:hover .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-toggler-icon {
+    width: 1.2em;
+    height: 1.2em;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(233, 162, 9, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Hero Section */
+#home {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 20px 8%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#hero {
+    flex: 1 1 60%;
+    text-align: left;
+    padding: 0px;
+    position: relative;
+}
+
+#shape {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/public/img/blob-path-01.png);
+    background-size: 700px;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+#cta {
+    position: relative;
+    z-index: 1;
+}
+
+.subtitle {
+    font-size: 18px;
+    color: var(--secondary-color);
+    margin-bottom: 15px;
+}
+
+.subtitle span {
+    color: var(--primary-color);
+    font-size: 20px;
+}
+
+.box1 {
+    position: relative;
+}
+
+.image-button {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.image-button:hover {
+    transform: scale(1.02);
+}
+
+.image-button:hover h1 {
+    color: var(--primary-color);
+}
+
+#hero h1 {
+    font-size: 2.8em;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+#hero-image {
+    width: 100%;
+    max-width: 700px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+#hero-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.image-button:hover #hero-image img {
+    transform: scale(1.05);
+}
+
+/* Banner e Artigos */
+#banner {
+    flex: 1 1 30%;
+    padding: 20px;
+}
+
+.artigo h4 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+.artigo-feat {
+    margin-bottom: 30px;
+}
+
+.art-button {
+    text-decoration: none;
+    color: inherit;
+}
+
+.img-container {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.artigo-feat img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.artigo-feat img:hover {
+    transform: scale(1.05);
+}
+
+.artigo-feat h5 {
+    font-size: 15px;
+    margin: 10px 0;
+    transition: color 0.3s;
+}
+
+.art-button:hover h5 {
+    color: var(--primary-color);
+}
+
+/* Container Comidas Fáceis */
+#container {
+    margin-top: 40px;
+}
+
+#container h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.menu-item {
+    text-align: left;
+}
+
+.menu-button {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.menu-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.menu-item img:hover {
+    transform: scale(1.05);
+}
+
+.menu-button h4 {
+    font-size: 15px;
+    margin-top: 10px;
+    transition: color 0.3s;
+}
+
+.menu-button:hover h4 {
+    color: var(--primary-color);
+}
+
+/* Menu Section */
+#menu {
+    background-color: var(--background-color);
+}
+
+.section-title {
+    color: var(--primary-color);
+    font-size: 1.563rem;
+    font-weight: 600;
+}
+
+.section-subtitle {
+    font-size: 2.1875rem;
+    color: var(--secondary-color);
+    font-weight: 700;
+}
+
+/* Dishes */
+#dishes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+    padding: 0 20px;
+}
+
+.dish {
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: transform 0.3s;
+    overflow: hidden;
+}
+
+.dish:hover {
+    transform: translateY(-10px);
+}
+
+.dish-heart {
+    position: absolute;
+    background-color: var(--primary-color);
+    color: white;
+    width: 70px;
+    height: 70px;
+    right: -10px;
+    top: -10px;
+    border-radius: 0px 37.5px 0px 42.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.563rem;
+    z-index: 1;
+}
+
+.dish-image {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 20px 20px 0 0;
+}
+
+.dish .card-body {
+    padding: 1.25rem;
+    background-color: #fff;
+}
+
+.dish-title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
+.dish-description {
+    color: #666;
+    font-size: 0.875rem;
+    margin-bottom: 15px;
+}
+
+.dish-rate {
+    color: var(--primary-color);
+}
+
+.dish-rate span {
+    color: #666;
+    margin-left: 5px;
+}
+
+/* Testimonials */
+#testimonials {
+    background-color: white;
+    padding: 60px 0;
+}
+
+.testi {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.testi .head h3 {
+    font-size: 2.125rem;
+    font-weight: 800;
+    color: var(--primary-color);
+    margin-bottom: 40px;
+}
+
+.testi .wrapper {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 30px 0;
+    margin-bottom: 30px;
+}
+
+.testi .wrapper:last-child {
+    margin-bottom: 0;
+}
+
+.testi .foto {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.testi .foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+}
+
+.testi .foto::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: -15px;
+    width: calc(100% + 30px);
+    height: calc(100% + 10px);
+    background-color: #e9a209;
+    border-radius: 33% 67% 50% 50% / 50% 14% 86% 50%;
+    z-index: 1;
+}
+
+.review {
+    flex: 1;
+}
+
+.review p {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    color: var(--secondary-color);
+}
+
+.review h4 {
+    font-size: 1.25rem;
+    margin: 1rem 0 0.3rem;
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
+.review span {
+    color: #666;
+    font-size: 0.875rem;
+}
+
+/* Footer */
+footer {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 2rem 0;
+}
+
+#footer-items {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-media-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-media-buttons img {
+    width: 25px;
+    height: 25px;
+    transition: transform 0.3s;
+}
+
+.social-media-buttons img:hover {
+    transform: scale(1.2);
+}
+
+/* Responsividade */
+@media screen and (max-width: 1170px) {
+    #home {
+        display: block;
+        min-height: auto;
+        padding: 20px;
+        margin: 0 auto;
+        max-width: 800px;
+    }
+
+    #hero {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        padding: 0;
+        width: 100%;
+    }
+
+    #shape {
+        display: none;
+    }
+
+    #cta {
+        text-align: center;
+    }
+
+    .subtitle {
+        font-size: 16px;
+    }
+
+    .subtitle span {
+        font-size: 18px;
+    }
+
+    #hero h1 {
+        font-size: 2.2em;
+        margin: 15px auto;
+    }
+
+    #hero-image {
+        margin-top: 30px;
+    }
+
+    #banner {
+        margin-top: 40px;
+    }
+
+    .menu {
+        grid-template-columns: 1fr;
+    }
+
+    .dish {
+        min-width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #navbar .container {
+        padding: 10px 20px;
+    }
+
+    .navbar-toggler {
+        margin-left: 15px;
+        order: 3;
+    }
+
+    .search {
+        order: 2;
+    }
+
+    #navbarNav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: var(--background-color);
+        padding: 20px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    #nav-list {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-item {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-link {
+        padding: 10px;
+        display: block;
+        width: 100%;
+    }
+
+    .nav-link:hover {
+        background-color: rgba(233, 162, 9, 0.1);
+    }
+
+    .testi .foto {
+        width: 120px;
+        height: 120px;
+    }
+
+    .review p {
+        font-size: 1rem;
+    }
+
+    .testi .head h3 {
+        font-size: 1.8rem;
+    }
+
+    .carousel-caption {
+        padding: 10px;
+    }
+
+    .carousel-caption h5 {
+        font-size: 1.2rem;
+    }
+
+    #nav-logo img {
+        height: 30px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #hero h1 {
+        font-size: 1.6em;
+    }
+
+    .artigo-feat img {
+        height: 150px;
+    }
+
+    .menu-item img {
+        height: 150px;
+    }
+}
+
+/* Carrossel */
+#carouselDestaques {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.carousel-caption {
+    background: rgba(0,0,0,0.5);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.carousel-caption h5 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* Cards de Receitas */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.card-title {
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: darken(var(--primary-color), 10%);
+    border-color: darken(var(--primary-color), 10%);
+}
+
+/* Seção Sobre */
+#sobre {
+    background-color: white;
+}
+
+.social-links a {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--secondary-color);
+}
+
+/* Página de Detalhes */
+.recipe-info .card {
+    border: none;
+    background-color: #f8f9fa;
+}
+
+.recipe-info i {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+}
+
+/* Animações */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card {
+    animation: fadeIn 0.5s ease-out;
+}

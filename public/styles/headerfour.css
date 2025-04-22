@@ -1,0 +1,211 @@
+body {
+    font-family: "Nunito", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+      background-color: #fff9ea;
+      background-image: url(/public/img/view-delicious-dish-food.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  header {
+      width: 100%;
+      padding: 10px 0%;
+  }
+  
+  #navbar {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+  }
+  
+  #nav-logo {
+      display: flex;
+      align-items: center;
+      font-size: 24px;
+      color: #e9a209;
+      cursor: pointer;
+  }
+  
+  #nav-logo:hover {
+    transform: scale(1.06);
+    transition: .2s;
+  }
+  
+  #nav-logo img {
+    width: 40px;
+    height: auto;
+  }
+  
+  #nav-list {
+      display: flex;
+      list-style: none;
+      gap: 48px;
+  }
+  
+  .nav-item a {
+      text-decoration: none;
+      color: #1d1d1dad;
+      font-weight: 600;
+      display: inline-block;
+      transition: .2s;
+  }
+  
+  .nav-item.active a {
+      color: #1d1d1d;
+      border-bottom: 3px solid #e9a209;
+  }
+  
+  header a:hover{
+      color: #1d1d1d;
+      transform: scale(1.05);
+  }
+  
+  .search {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      text-align: center;
+    }
+    
+    .search__input {
+      font-family: inherit;
+      font-size: inherit;
+      background-color: #f4f2f2;
+      border: none;
+      color: #646464;
+      padding: 0.7rem 1rem;
+      border-radius: 30px;
+      width: 12em;
+      transition: all ease-in-out .5s;
+      margin-right: -2rem;
+    }
+    
+    .search__input:hover, .search__input:focus {
+      box-shadow: 0 0 1em #00000013;
+    }
+    
+    .search__input:focus {
+      outline: none;
+      background-color: #f0eeee;
+    }
+    
+    .search__input::-webkit-input-placeholder {
+      font-weight: 100;
+      color: #ccc;
+    }
+    
+    .search__input:focus + .search__button {
+      background-color: #f0eeee;
+    }
+    
+    .search__button {
+      border: none;
+      background-color: #f4f2f2;
+      margin-top: .1em;
+    }
+    
+    .search__button:hover {
+      cursor: pointer;
+    }
+    
+  .search__icon {
+    height: 1.3em;
+    width: 1.3em;
+    fill: #b4b4b4;
+  }
+  
+  .banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    margin: auto;
+    padding: 50px;
+    background-color: #fff9ea;
+    margin-top: 50px;
+    border-radius: 5px;
+    font-weight: 300;
+  }
+  
+  .banner:hover {
+    transform: scale(1.06);
+    transition: .2s;
+    box-shadow: #1d1d1d;
+  }
+  
+  .footer {
+    background-color: #e9a209;
+    height: 50px;
+    color: #fff9ea;
+    text-align: center;
+    padding-top: 30px;
+  }
+  
+  .card {
+    width: 600px;
+    margin: auto;
+    padding: 50px;
+    background-color: #fff9ea;
+    margin: 50px auto;
+    border-radius: 5px;
+    font-weight: 300;
+  }
+  
+  h1 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+    color: #e9a209;
+    margin-bottom: 20px;
+  }
+  
+  li {
+    list-style-position: inside;
+    line-height: 35px;
+  }
+  
+  ul {
+    margin-bottom: 40px;
+  }
+  
+  .card a {
+    color: #fff9ea;
+    margin-top: 50px;
+    text-decoration: none;
+    padding: 15px;
+    background-color: #e9a209;
+    font-weight: 400;
+    font-size: 20px;
+    border-radius: 30px;
+  }
+  
+  .card:hover {
+    transform: scale(1.06);
+    transition: .2s;
+    box-shadow: #1d1d1d;
+  }
+  
+  .titulo-receita {
+    font-weight: 700;
+    font-size: 30px;
+    margin-top: 0px;
+  }
+  
+  .link-footer {
+    font-weight: 700;
+    text-decoration: none;
+    color: #fff9ea;
+  }
+  
+  .img-icon{
+    color: #e9a209;
+    width: 25px;
+    height: 25px;
+    padding-top: 10px;
+  }
