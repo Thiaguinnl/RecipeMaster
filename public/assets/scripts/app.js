@@ -1,7 +1,7 @@
 const dados = {
     "receitas": [
         {
-            "id": 1,
+            "id": "rec1",
             "titulo": "Sopa de Abóbora com Gengibre",
             "descricao": "Uma sopa cremosa e reconfortante, perfeita para os dias frios",
             "conteudo": `
@@ -45,32 +45,32 @@ const dados = {
             "tempoPreparo": "45 minutos",
             "porcoes": "6 pessoas",
             "dificuldade": "Fácil",
-            "imagem_principal": "./img/front-view-tasty-potatoes-along-with-cooked-vegetables-inside-white-plate-brown-surface.jpg",
+            "imagem_principal": "/assets/img/front-view-tasty-potatoes-along-with-cooked-vegetables-inside-white-plate-brown-surface.jpg",
             "imagens_complementares": [
                 {
                     "id": 1,
-                    "src": "./img/top-view-delicious-soup-assortment.jpg",
+                    "src": "/assets/img/top-view-delicious-soup-assortment.jpg",
                     "descricao": "Sopa servida"
                 },
                 {
                     "id": 2,
-                    "src": "./img/naturallis-63-61151af8212d9.jpg",
+                    "src": "/assets/img/naturallis-63-61151af8212d9.jpg",
                     "descricao": "Com frango"
                 },
                 {
                     "id": 3,
-                    "src": "./img/3.SOPA-DE-ABOBORA-E-GENGIBRE.jpg",
+                    "src": "/assets/img/3.SOPA-DE-ABOBORA-E-GENGIBRE.jpg",
                     "descricao": "Apresentação final"
                 },
                 {
                     "id": 4,
-                    "src": "./img/iStock-541305426.jpg",
+                    "src": "/assets/img/iStock-541305426.jpg",
                     "descricao": "Apenas abóbora"
                 }
             ]
         },
         {
-            "id": 2,
+            "id": "rec2",
             "titulo": "Lasanha de Berinjela Low-Carb",
             "descricao": "A receita de lasanha é um prato clássico, muito amado e muito fácil de preparar",
             "conteudo": `
@@ -115,32 +115,32 @@ const dados = {
             "tempoPreparo": "1 hora e 10 minutos",
             "porcoes": "4 pessoas",
             "dificuldade": "Médio",
-            "imagem_principal": "./img/classic-lasagna-with-bolognese-sauce.jpg",
+            "imagem_principal": "/assets/img/classic-lasagna-with-bolognese-sauce.jpg",
             "imagens_complementares": [
                 {
                     "id": 1,
-                    "src": "./img/vertical-shot-delicious-lasagna-white-plate.jpg",
+                    "src": "/assets/img/vertical-shot-delicious-lasagna-white-plate.jpg",
                     "descricao": "Lasanha servida"
                 },
                 {
                     "id": 2,
-                    "src": "img/lasanha-vegetariana-tratada-imkzxnu3.jpg",
+                    "src": "/assets/img/lasanha-vegetariana-tratada-imkzxnu3.jpg",
                     "descricao": "Lasanha vegetariana"
                 },
                 {
                     "id": 3,
-                    "src": "./img/shutterstock-739787011.jpg",
+                    "src": "/assets/img/shutterstock-739787011.jpg",
                     "descricao": "Lasanha a bolonhesa"
                 },
                 {
                     "id": 4,
-                    "src": "./img/download-_1_.jpg",
+                    "src": "/assets/img/download-_1_.jpg",
                     "descricao": "Lasanha de cogumelos"
                 }
             ]
         },
         {
-            "id": 3,
+            "id": "rec3",
             "titulo": "Tacos de Frango",
             "descricao": "Deliciosos tacos mexicanos com frango grelhado, abacate e coentro fresco",
             "conteudo": `
@@ -186,32 +186,32 @@ const dados = {
             "tempoPreparo": "25 minutos",
             "porcoes": "2 pessoas",
             "dificuldade": "Fácil",
-            "imagem_principal": "img/delicious-chicken-tacos-with-avocado-cilantro_632498-24820-removebg-preview.png",
+            "imagem_principal": "/assets/img/delicious-chicken-tacos-with-avocado-cilantro_632498-24820-removebg-preview.png",
             "imagens_complementares": [
                 {
                     "id": 1,
-                    "src": "./img/tacos-frango.jpg",
+                    "src": "/assets/img/tacos-frango.jpg",
                     "descricao": "Prato pronto"
                 },
                 {
                     "id": 2,
-                    "src": "./img/Tacos-de-frango-com-guacamole-e-sour-cream-G-1.jpg",
+                    "src": "/assets/img/Tacos-de-frango-com-guacamole-e-sour-cream-G-1.jpg",
                     "descricao": "Tacos de Frango com guacamole"
                 },
                 {
                     "id": 3,
-                    "src": "./img/347923-original.jpg",
+                    "src": "/assets/img/347923-original.jpg",
                     "descricao": "Tacos Mexicanos originais"
                 },
                 {
                     "id": 4,
-                    "src": "./img/001_Tacos_de_carnitas,_carne_asada_y_al_pastor.jpg",
+                    "src": "/assets/img/001_Tacos_de_carnitas,_carne_asada_y_al_pastor.jpg",
                     "descricao": "Empratamento dos tacos"
                 }
             ]
         },
         {
-            "id": 4,
+            "id": "rec4",
             "titulo": "Pizza de Pepperoni Clássica",
             "descricao": "Uma deliciosa pizza italiana com pepperoni crocante e queijo derretido",
             "conteudo": `
@@ -260,32 +260,32 @@ const dados = {
             "tempoPreparo": "1 hora e 30 minutos",
             "porcoes": "8 fatias",
             "dificuldade": "Médio",
-            "imagem_principal": "./img/slice-crispy-pizza-with-meat-cheese.jpg",
+            "imagem_principal": "/assets/img/slice-crispy-pizza-with-meat-cheese.jpg",
             "imagens_complementares": [
                 {
                     "id": 1,
-                    "src": "./img/pizza-de-pepperoni-caseira-portal-minha-receita.jpg",
+                    "src": "/assets/img/pizza-de-pepperoni-caseira-portal-minha-receita.jpg",
                     "descricao": "Pizza pepperoni servida"
                 },
                 {
                     "id": 2,
-                    "src": "./img/MHEB7V2WRFDVHBXPFP6RFYZ66U.jpg",
+                    "src": "/assets/img/MHEB7V2WRFDVHBXPFP6RFYZ66U.jpg",
                     "descricao": "Pizza de napolitana"
                 },
                 {
                     "id": 3,
-                    "src": "./img/pizza_caseira_marguerita.webp",
+                    "src": "/assets/img/pizza_caseira_marguerita.webp",
                     "descricao": "Pizza marguerita"
                 },
                 {
                     "id": 4,
-                    "src": "./img/pizza-doce-capa.webp",
+                    "src": "/assets/img/pizza-doce-capa.webp",
                     "descricao": "Pizza doce"
                 }
             ]
         },
         {
-            "id": 5,
+            "id": "rec5",
             "titulo": "Homus Caseiro com Azeite e Pita Chips",
             "descricao": "Pasta cremosa de grão-de-bico com tahine e limão, acompanhada de chips de pão pita",
             "conteudo": `
@@ -332,32 +332,32 @@ const dados = {
             "tempoPreparo": "20 minutos",
             "porcoes": "6 pessoas",
             "dificuldade": "Fácil",
-            "imagem_principal": "./img/healthy-homemade-hummus-with-olive-oil-pita-chips-removebg-preview.png",
+            "imagem_principal": "/assets/img/healthy-homemade-hummus-with-olive-oil-pita-chips-removebg-preview.png",
             "imagens_complementares": [
                 {
                     "id": 1,
-                    "src": "./img/humus-caseiro-saudavel-com-azeite-e-pita-chips_2829-13954.jpeg",
+                    "src": "/assets/img/humus-caseiro-saudavel-com-azeite-e-pita-chips_2829-13954.jpeg",
                     "descricao": "Homus caseiro servido"
                 },
                 {
                     "id": 2,
-                    "src": "./img/bk-5770-homus-receita.webp",
+                    "src": "/assets/img/bk-5770-homus-receita.webp",
                     "descricao": "Homus no prato"
                 },
                 {
                     "id": 3,
-                    "src": "./img/bk-6853-blog-ayu3949.webp",
+                    "src": "/assets/img/bk-6853-blog-ayu3949.webp",
                     "descricao": "Homus de feijão-fradinho"
                 },
                 {
                     "id": 4,
-                    "src": "./img/homus-pasta-arabe-de-grao-de-bico-1.jpeg",
+                    "src": "/assets/img/homus-pasta-arabe-de-grao-de-bico-1.jpeg",
                     "descricao": "Homus de pasta árabe de grão-de-bico"
                 }
             ]
         },
         {
-            "id": 6,
+            "id": "rec6",
             "titulo": "Tiramisù com Ovomaltine",
             "descricao": "Uma versão brasileira da sobremesa italiana clássica",
             "conteudo": `
@@ -401,32 +401,32 @@ const dados = {
             "tempoPreparo": "30 minutos + 4 horas de geladeira",
             "porcoes": "8 pessoas",
             "dificuldade": "Médio",
-            "imagem_principal": "./img/tasty-homemade-tiramisu-cake.jpg",
+            "imagem_principal": "/assets/img/tasty-homemade-tiramisu-cake.jpg",
             "imagens_complementares": [
                 {
                     "id": 1,
-                    "src": "./img/1853b96b-a724-4e49-8538-26bc4739059d-removebg-preview.png",
+                    "src": "/assets/img/1853b96b-a724-4e49-8538-26bc4739059d-removebg-preview.png",
                     "descricao": "Tiramisù servido"
                 },
                 {
                     "id": 2,
-                    "src": "./img/deCx5v29SmPsl1IwbO75j2L7K1OaXgZM4mIeCdgV.jpeg",
+                    "src": "/assets/img/deCx5v29SmPsl1IwbO75j2L7K1OaXgZM4mIeCdgV.jpeg",
                     "descricao": "Tiramisù no pote"
                 },
                 {
                     "id": 3,
-                    "src": "./img/252899-shutterstock-1725360061.jpg",
+                    "src": "/assets/img/252899-shutterstock-1725360061.jpg",
                     "descricao": "Tiramisù no prato"
                 },
                 {
                     "id": 4,
-                    "src": "./img/1-58.jpg",
+                    "src": "/assets/img/1-58.jpg",
                     "descricao": "Tiramisù decorado"
                 }
             ]
         },
         {
-            "id": 7,
+            "id": "rec7",
             "titulo": "Ceviche Clássico Peruano",
             "descricao": "Saboroso, adocicado e refrescante, o ceviche é considerado patrimônio cultural do Peru",
             "conteudo": `
@@ -466,32 +466,32 @@ const dados = {
             "tempoPreparo": "25 minutos",
             "porcoes": "2-4 pessoas",
             "dificuldade": "Fácil",
-            "imagem_principal": "./img/cropped-close-up-plate-full-fried-cheese-balls-wooden-table-dark-wall-copyspace-dish-meal-delicious-tasty-nutrition-fat-calories-unhealthy.jpg",
+            "imagem_principal": "/assets/img/cropped-close-up-plate-full-fried-cheese-balls-wooden-table-dark-wall-copyspace-dish-meal-delicious-tasty-nutrition-fat-calories-unhealthy.jpg",
             "imagens_complementares": [
                 {
                     "id": 1,
-                    "src": "./img/cropped-close-up-plate-full-fried-cheese-balls-wooden-table-dark-wall-copyspace-dish-meal-delicious-tasty-nutrition-fat-calories-unhealthy.jpg",
+                    "src": "/assets/img/cropped-close-up-plate-full-fried-cheese-balls-wooden-table-dark-wall-copyspace-dish-meal-delicious-tasty-nutrition-fat-calories-unhealthy.jpg",
                     "descricao": "Ceviche servido"
                 },
                 {
                     "id": 2,
-                    "src": "./img/ceviche_de_camarao_especial_1493735830346.jpg",
+                    "src": "/assets/img/ceviche_de_camarao_especial_1493735830346.jpg",
                     "descricao": "Ceviche de Camarão Especial"
                 },
                 {
                     "id": 3,
-                    "src": "./img/ceviche.jpg",
+                    "src": "/assets/img/ceviche.jpg",
                     "descricao": "Ceviche Tradicional"
                 },
                 {
                     "id": 4,
-                    "src": "./img/high-angle-cup-with-delicious-esquites-lime.jpg",
+                    "src": "/assets/img/high-angle-cup-with-delicious-esquites-lime.jpg",
                     "descricao": "Ceviche com Limão"
                 }
             ]
         },
         {
-            "id": 8,
+            "id": "rec8",
             "titulo": "Bowl asiático",
             "descricao": "Peixe cru, camarão, frango empanado, tomate-cereja, cebola roxa e arroz",
             "conteudo": `
@@ -535,32 +535,32 @@ const dados = {
             "tempoPreparo": "45 minutos",
             "porcoes": "2 pessoas",
             "dificuldade": "Médio",
-            "imagem_principal": "./img/dish.png",
+            "imagem_principal": "/assets/img/dish.png",
             "imagens_complementares": [
                 {
                     "id": 1,
-                    "src": "./img/Poke-bowl-estilo-nordico1.jpg",
+                    "src": "/assets/img/Poke-bowl-estilo-nordico1.jpg",
                     "descricao": "Bowl estilo nordico com salmão e mirtilo"
                 },
                 {
                     "id": 2,
-                    "src": "./img/7434-SITE-PROJETO-1120-scaled.jpg",
+                    "src": "/assets/img/7434-SITE-PROJETO-1120-scaled.jpg",
                     "descricao": "Bowl com legumes e frango"
                 },
                 {
                     "id": 3,
-                    "src": "./img/228-q-4825-picadinho-oriental-em-uma-panela-so.webp",
+                    "src": "/assets/img/228-q-4825-picadinho-oriental-em-uma-panela-so.webp",
                     "descricao": "Bowl com picadinho oriental"
                 },
                 {
                     "id": 4,
-                    "src": "./img/Bowl_Arroz_Negro_Camarao_Salteado.jpg",
+                    "src": "/assets/img/Bowl_Arroz_Negro_Camarao_Salteado.jpg",
                     "descricao": "Bowl com arroz negro e camarão salteado"
                 }
             ]
         },
         {
-            "id": 9,
+            "id": "rec9",
             "titulo": "Misto quente",
             "descricao": "Pão de forma, presunto, frango desfiado, queijo, tomate e orégano",
             "conteudo": `
@@ -599,32 +599,32 @@ const dados = {
             "tempoPreparo": "15 minutos",
             "porcoes": "2 pessoas",
             "dificuldade": "Fácil",
-            "imagem_principal": "./img/dish2.png",
+            "imagem_principal": "/assets/img/dish2.png",
             "imagens_complementares": [
                 {
                     "id": 1,
-                    "src": "./img/istock-155388694-1.jpg",
+                    "src": "/assets/img/istock-155388694-1.jpg",
                     "descricao": "Misto quente servido"
                 },
                 {
                     "id": 2,
-                    "src": "./img/istock-1313739997-e1690315827805.jpg",
+                    "src": "/assets/img/istock-1313739997-e1690315827805.jpg",
                     "descricao": "Misto quente com cheddar"
                 },
                 {
                     "id": 3,
-                    "src": "./img/69893dd5-83a3-435b-88f6-7e5bf10d4e1b.jpg",
+                    "src": "/assets/img/69893dd5-83a3-435b-88f6-7e5bf10d4e1b.jpg",
                     "descricao": "Misto quente com ovo e bacon"
                 },
                 {
                     "id": 4,
-                    "src": "./img/202203141716_LJKS_i.jpeg",
+                    "src": "/assets/img/202203141716_LJKS_i.jpeg",
                     "descricao": "Misto quente com pão francês"
                 }
             ]
         },
         {
-            "id": 10,
+            "id": "rec10",
             "titulo": "Smoothie de kiwi",
             "descricao": "Banana, leite vegetal, decorado com morangos, kiwi e lascas de coco",
             "conteudo": `
@@ -663,32 +663,32 @@ const dados = {
             "tempoPreparo": "10 minutos",
             "porcoes": "2 pessoas",
             "dificuldade": "Fácil",
-            "imagem_principal": "./img/dish3.png",
+            "imagem_principal": "/assets/img/dish3.png",
             "imagens_complementares": [
                 {
                     "id": 1,
-                    "src": "./img/smoothie-de-kiwi-com-chia.jpeg",
+                    "src": "/assets/img/smoothie-de-kiwi-com-chia.jpeg",
                     "descricao": "Smoothie de kiwi servido"
                 },
                 {
                     "id": 2,
-                    "src": "./img/smoothie-banana-kiwi.jpg",
+                    "src": "/assets/img/smoothie-banana-kiwi.jpg",
                     "descricao": "Smoothie morango com kiwi"
                 },
                 {
                     "id": 3,
-                    "src": "./img/Mango-Kiwi-Smoothie-Evergreen-Kitchen-1.jpg",
+                    "src": "/assets/img/Mango-Kiwi-Smoothie-Evergreen-Kitchen-1.jpg",
                     "descricao": "Smoothie de manga"
                 },
                 {
                     "id": 4,
-                    "src": "./img/blueberry-kiwi-smoothie_web-6.jpg",
+                    "src": "/assets/img/blueberry-kiwi-smoothie_web-6.jpg",
                     "descricao": "Smoothie de mirtilo"
                 }
             ]
         },
         {
-            "id": 11,
+            "id": "rec11",
             "titulo": "Yakisoba",
             "descricao": "Lámem, camarão, cenoura, brócolis, cebola, molho shoyu e óleo de gergelim",
             "conteudo": `
@@ -730,32 +730,32 @@ const dados = {
             "tempoPreparo": "30 minutos",
             "porcoes": "4 pessoas",
             "dificuldade": "Médio",
-            "imagem_principal": "./img/dish4.png",
+            "imagem_principal": "/assets/img/dish4.png",
             "imagens_complementares": [
                 {
                     "id": 1,
-                    "src": "./img/yakisoba-scaled.jpg",
+                    "src": "/assets/img/yakisoba-scaled.jpg",
                     "descricao": "Yakisoba servido"
                 },
                 {
                     "id": 2,
-                    "src": "./img/Yakisoba-de-frango-G.jpg",
+                    "src": "/assets/img/Yakisoba-de-frango-G.jpg",
                     "descricao": "Yakisoba tradicional"
                 },
                 {
                     "id": 3,
-                    "src": "./img/renata-imagem-receitas-yakisoba-share.jpg",
+                    "src": "/assets/img/renata-imagem-receitas-yakisoba-share.jpg",
                     "descricao": "Yakisoba com macarrão instantâneo"
                 },
                 {
                     "id": 4,
-                    "src": "./img/ddda0b8f9e045fe1198e.webp",
+                    "src": "/assets/img/ddda0b8f9e045fe1198e.webp",
                     "descricao": "Yakisoba com Camarão"
                 }
             ]
         },
         {
-            "id": 12,
+            "id": "rec12",
             "titulo": "Nhoque de Batata-Doce",
             "descricao": "Nhoque de batata-doce roxa com molho de gorgonzola e nozes",
             "conteudo": `
@@ -805,26 +805,26 @@ const dados = {
             "tempoPreparo": "35 minutos",
             "porcoes": "2 pessoas",
             "dificuldade": "Médio",
-            "imagem_principal": "./img/186be9f9-cbd1-4d0a-920b-10df43324008-removebg-preview.png",
+            "imagem_principal": "/assets/img/186be9f9-cbd1-4d0a-920b-10df43324008-removebg-preview.png",
             "imagens_complementares": [
                 {
                     "id": 1,
-                    "src": "./img/renata-imagem-receitas-nhoque-de-batata-share.jpg",
+                    "src": "/assets/img/renata-imagem-receitas-nhoque-de-batata-share.jpg",
                     "descricao": "Nhoque de Batata-Doce servido"
                 },
                 {
                     "id": 2,
-                    "src": "./img/nhoque-molho-bolonhesa.jpeg",
+                    "src": "/assets/img/nhoque-molho-bolonhesa.jpeg",
                     "descricao": "Nhoque molho bolonhesa"
                 },
                 {
                     "id": 3,
-                    "src": "./img/12bc46f1ff632ff3a42d461b74f7aa26.jpeg",
+                    "src": "/assets/img/12bc46f1ff632ff3a42d461b74f7aa26.jpeg",
                     "descricao": "Nhoque molho branco"
                 },
                 {
                     "id": 4,
-                    "src": "./img/como-fazer-nhoque-topo.jpg",
+                    "src": "/assets/img/como-fazer-nhoque-topo.jpg",
                     "descricao": "Nhoque de Camarão"
                 }
             ]
@@ -832,179 +832,22 @@ const dados = {
     ]
 }
 
-// Dados das receitas antigas para o menu dinâmico
-const dadosAntigos = [
-    {
-        "id": "old1",
-    "titulo": "Wrap Crispy Tex Mex",
-    "descricao": "Frango crocante, mix de verdes, cenoura, milho, ovo de codorna, parmesão em lascas e molho buffalo ranch.",
-    "categoria": "Lanches",
-    "imagem": "img/wrap-crispy-tex-mex-franquia-boali-alimentacao-saudavel-removebg-preview.png"
-  },
-  {
-        "id": "old2",
-    "titulo": "Salada Honey Crispy Chicken",
-    "descricao": "Alface americana, frango crocante, tomate, palmito ao pesto, gorgonzola, cebola crocante e molho mostarda e mel.",
-    "categoria": "Saladas",
-    "imagem": "img/nova-salada-honey-crysp-chicken-removebg-preview.png"
-  },
-  {
-        "id": "old3",
-    "titulo": "Sanduba Frango Crocante",
-    "descricao": "Frango crocante, alface americana, gorgonzola, molho caesar e buffalo ranch.",
-    "categoria": "Lanches",
-    "imagem": "img/sanduba-frango-crocante-removebg-preview.png"
-  }
-];
-
-// Dados das receitas antigas para detalhes
-const receitasAntigas = {
-    "old1": {
-        "id": "old1",
-        "titulo": "Wrap Crispy Tex Mex",
-        "descricao": "Frango crocante, mix de verdes, cenoura, milho, ovo de codorna, parmesão em lascas e molho buffalo ranch.",
-        "conteudo": `
-            <h2 class="text-center" style="color: #e9a209;">Ingredientes</h2>
-            <div class="bg-white rounded p-4 mb-4">
-                <div class="d-flex flex-column">
-                    <div class="border-bottom py-2 text-center">2 tortilhas de trigo grandes (aprox. 25 cm de diâmetro)</div>
-                    <div class="border-bottom py-2 text-center">200g de frango empanado crocante (tiras ou pedaços já fritos/assados)</div>
-                    <div class="border-bottom py-2 text-center">1 xícara de mix de folhas verdes lavadas e secas</div>
-                    <div class="border-bottom py-2 text-center">½ xícara de cenoura ralada fina</div>
-                    <div class="border-bottom py-2 text-center">½ xícara de milho cozido ou em conserva</div>
-                    <div class="border-bottom py-2 text-center">6 ovos de codorna cozidos, cortados ao meio</div>
-                    <div class="border-bottom py-2 text-center">¼ de xícara de lascas de parmesão (ou a gosto)</div>
-                    <div class="py-2 text-center">4 colheres de sopa de molho Buffalo Ranch (2 por wrap)</div>
-                </div>
-            </div>
-
-            <h2 class="text-center" style="color: #e9a209;">Modo de Preparo</h2>
-            <div class="bg-white rounded p-4 mb-4">
-                <div class="d-flex flex-column">
-                    <div class="border-bottom py-2">Cozinhe os ovos de codorna (cerca de 5 minutos em água fervente), descasque e corte ao meio.</div>
-                    <div class="border-bottom py-2">Aqueça as tortillas rapidamente em uma frigideira (10-15 segundos de cada lado) para ficarem maleáveis.</div>
-                    <div class="border-bottom py-2">Monte cada wrap assim: 1 tortilla, 1 colher de sopa de molho Buffalo Ranch, ½ xícara do mix de folhas, ¼ xícara de cenoura ralada, ¼ xícara de milho, 100g de frango crocante, 3 ovos de codorna, 2 colheres de sopa de lascas de parmesão.</div>
-                    <div class="border-bottom py-2">Finalize com mais 1 colher de sopa de molho por cima (opcional).</div>
-                    <div class="border-bottom py-2">Enrole os wraps dobrando as laterais e depois enrolando firmemente como um burrito.</div>
-                    <div class="py-2">(Opcional): Toque final na frigideira ou sanduicheira para dourar por fora (1-2 minutos de cada lado).</div>
-                </div>
-            </div>
-
-            <h2 class="text-center" style="color: #e9a209;">Rendimento</h2>
-            <div class="bg-white rounded p-4 mb-4">
-                <div class="text-center">Serve 2 pessoas (1 wrap por pessoa) — ótimo como almoço ou jantar leve.</div>
-            </div>
-        `,
-        "categoria": "Lanches",
-        "tempoPreparo": "45 minutos",
-        "porcoes": "2 pessoas",
-        "dificuldade": "Fácil",
-        "imagem_principal": "img/wrap-crispy-tex-mex-franquia-boali-alimentacao-saudavel-removebg-preview.png"
-    },
-    "old2": {
-        "id": "old2",
-        "titulo": "Salada Honey Crispy Chicken",
-        "descricao": "Alface americana, frango crocante, tomate, palmito ao pesto, gorgonzola, cebola crocante e molho mostarda e mel.",
-        "conteudo": `
-            <h2 class="text-center" style="color: #e9a209;">Ingredientes</h2>
-            <div class="bg-white rounded p-4 mb-4">
-                <div class="d-flex flex-column">
-                    <div class="border-bottom py-2 text-center">2 pés de alface americana, folhas lavadas e rasgadas</div>
-                    <div class="border-bottom py-2 text-center">2 filés de frango empanados e crocantes, cortados em tiras</div>
-                    <div class="border-bottom py-2 text-center">2 tomates médios, cortados em fatias ou cubos</div>
-                    <div class="border-bottom py-2 text-center">200g de palmito pupunha em rodelas</div>
-                    <div class="border-bottom py-2 text-center">100g de queijo gorgonzola esfarelado</div>
-                    <div class="border-bottom py-2 text-center">½ xícara de cebola crocante</div>
-                    <div class="border-bottom py-2 text-center">4 colheres de sopa de molho de mostarda e mel</div>
-                    <div class="py-2 text-center">2 colheres de sopa de pesto para o palmito</div>
-                </div>
-            </div>
-
-            <h2 class="text-center" style="color: #e9a209;">Modo de Preparo</h2>
-            <div class="bg-white rounded p-4 mb-4">
-                <div class="d-flex flex-column">
-                    <div class="border-bottom py-2">Prepare o frango empanado e corte em tiras uniformes.</div>
-                    <div class="border-bottom py-2">Em uma tigela, misture o palmito com o pesto e reserve.</div>
-                    <div class="border-bottom py-2">Em uma tigela grande ou prato de servir, disponha a alface rasgada como base.</div>
-                    <div class="border-bottom py-2">Distribua por cima as tiras de frango crocante e os tomates.</div>
-                    <div class="border-bottom py-2">Adicione o palmito temperado com pesto.</div>
-                    <div class="border-bottom py-2">Espalhe o gorgonzola esfarelado por cima.</div>
-                    <div class="border-bottom py-2">Finalize com a cebola crocante.</div>
-                    <div class="py-2">Sirva o molho de mostarda e mel à parte ou regue sobre a salada no momento de servir.</div>
-                </div>
-            </div>
-
-            <h2 class="text-center" style="color: #e9a209;">Rendimento</h2>
-            <div class="bg-white rounded p-4 mb-4">
-                <div class="text-center">Serve 2 pessoas como prato principal.</div>
-            </div>
-        `,
-        "categoria": "Saladas",
-        "tempoPreparo": "50 minutos",
-        "porcoes": "2 pessoas",
-        "dificuldade": "Fácil",
-        "imagem_principal": "img/nova-salada-honey-crysp-chicken-removebg-preview.png"
-    },
-    "old3": {
-        "id": "old3",
-        "titulo": "Sanduba Frango Crocante",
-        "descricao": "Frango crocante, alface americana, gorgonzola, molho caesar e buffalo ranch.",
-        "conteudo": `
-            <h2 class="text-center" style="color: #e9a209;">Ingredientes</h2>
-            <div class="bg-white rounded p-4 mb-4">
-                <div class="d-flex flex-column">
-                    <div class="border-bottom py-2 text-center">2 pães tipo brioche frescos</div>
-                    <div class="border-bottom py-2 text-center">2 filés de frango grandes empanados e crocantes</div>
-                    <div class="border-bottom py-2 text-center">4 folhas grandes de alface americana</div>
-                    <div class="border-bottom py-2 text-center">100g de queijo gorgonzola esfarelado</div>
-                    <div class="border-bottom py-2 text-center">4 colheres de sopa de molho caesar</div>
-                    <div class="py-2 text-center">4 colheres de sopa de molho buffalo </div>
-                </div>
-            </div>
-
-            <h2 class="text-center" style="color: #e9a209;">Modo de Preparo</h2>
-            <div class="bg-white rounded p-4 mb-4">
-                <div class="d-flex flex-column">
-                    <div class="border-bottom py-2">Prepare o frango empanado até ficar bem crocante.</div>
-                    <div class="border-bottom py-2">Corte os pães ao meio e toste levemente na frigideira ou torradeira.</div>
-                    <div class="border-bottom py-2">Espalhe o molho caesar na base do pão.</div>
-                    <div class="border-bottom py-2">Coloque duas folhas de alface em cada sanduíche.</div>
-                    <div class="border-bottom py-2">Adicione o filé de frango crocante.</div>
-                    <div class="border-bottom py-2">Distribua o gorgonzola esfarelado sobre o frango.</div>
-                    <div class="py-2">Finalize com o molho buffalo ranch e feche o sanduíche.</div>
-                </div>
-            </div>
-
-            <h2 class="text-center" style="color: #e9a209;">Rendimento</h2>
-            <div class="bg-white rounded p-4 mb-4">
-                <div class="text-center">Serve 2 pessoas.</div>
-            </div>
-        `,
-        "categoria": "Lanches",
-        "tempoPreparo": "20 minutos",
-        "porcoes": "2 pessoas",
-        "dificuldade": "Fácil",
-        "imagem_principal": "img/sanduba-frango-crocante-removebg-preview.png"
-    }
-};
-
 // Dados das imagens para a seção Todas as Receitas
 const imagensTodasReceitas = {
-    "Sopa de Abóbora com Gengibre": "./img/12905643-removebg-preview.png",
-    "Lasanha de Berinjela Low-Carb": "./img/10458317-removebg-preview.png",
-    "Tacos de Frango": "./img/delicious-chicken-tacos-with-avocado-cilantro_632498-24820-removebg-preview.png",
-    "Pizza de Pepperoni Clássica": "./img/057f1b6c-ec55-47d9-8275-cabf3479c3fe-removebg-preview.png",
-    "Homus Caseiro com Azeite e Pita Chips": "./img/healthy-homemade-hummus-with-olive-oil-pita-chips-removebg-preview.png",
-    "Tiramisù com Ovomaltine": "./img/1853b96b-a724-4e49-8538-26bc4739059d-removebg-preview.png",
-    "Ceviche Clássico Peruano": "./img/ceviche-png-with-transparent-background_484256-921-removebg-preview.png",
-    "Bowl asiático": "./img/dish.png",
-    "Misto quente": "./img/dish2.png",
-    "Smoothie de kiwi": "./img/dish3.png",
-    "Yakisoba": "./img/dish4.png",
-    "Nhoque de Batata-Doce": "./img/186be9f9-cbd1-4d0a-920b-10df43324008-removebg-preview.png"
+    "Sopa de Abóbora com Gengibre": "/assets/img/12905643-removebg-preview.png",
+    "Lasanha de Berinjela Low-Carb": "/assets/img/10458317-removebg-preview.png",
+    "Tacos de Frango": "/assets/img/delicious-chicken-tacos-with-avocado-cilantro_632498-24820-removebg-preview.png",
+    "Pizza de Pepperoni Clássica": "/assets/img/057f1b6c-ec55-47d9-8275-cabf3479c3fe-removebg-preview.png",
+    "Homus Caseiro com Azeite e Pita Chips": "/assets/img/healthy-homemade-hummus-with-olive-oil-pita-chips-removebg-preview.png",
+    "Tiramisù com Ovomaltine": "/assets/img/1853b96b-a724-4e49-8538-26bc4739059d-removebg-preview.png",
+    "Ceviche Clássico Peruano": "/assets/img/ceviche-png-with-transparent-background_484256-921-removebg-preview.png",
+    "Bowl asiático": "/assets/img/dish.png",
+    "Misto quente": "/assets/img/dish2.png",
+    "Smoothie de kiwi": "/assets/img/dish3.png",
+    "Yakisoba": "/assets/img/dish4.png",
+    "Nhoque de Batata-Doce": "/assets/img/186be9f9-cbd1-4d0a-920b-10df43324008-removebg-preview.png"
 };
 
-// Função para carregar os destaques no carrossel
 function carregarDestaques() {
     const carouselInner = document.querySelector('#carouselDestaques .carousel-inner');
     if (!carouselInner) return;
@@ -1080,7 +923,6 @@ function carregarDestaques() {
     `;
     document.head.appendChild(style);
 
-    // Inicializa o carrossel após carregar todas as imagens
     const carousel = new bootstrap.Carousel(document.getElementById('carouselDestaques'), {
         interval: 5000, 
         wrap: true, 
@@ -1091,7 +933,6 @@ function carregarDestaques() {
     });
 }
 
-// Função para carregar todas as receitas
 function carregarTodasReceitas() {
     const container = document.getElementById('todos-itens-container');
     if (!container) return;
@@ -1102,8 +943,7 @@ function carregarTodasReceitas() {
         const col = document.createElement('div');
         col.className = 'col-sm-6 col-lg-3';
         col.innerHTML = `
-            <div class="card dish h-100">
-                <a href="detalhes.html?id=${receita.id}" class="stretched-link"></a>
+            <div class="card dish h-100 position-relative">
                 <div class="dish-heart">
                     <i class="fa-solid fa-heart"></i>
                 </div>
@@ -1113,132 +953,511 @@ function carregarTodasReceitas() {
                 <div class="card-body">
                     <h3 class="dish-title">${receita.titulo}</h3>
                     <p class="dish-description">${receita.descricao || 'Tempo de preparo: ' + receita.tempoPreparo}</p>
-                    <div class="dish-rate">
+                    <div class="dish-rate" style="display: flex; align-items: center;">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <span>(500+)</span>
+                        <span class="favorito-wrapper" data-receita-id="${receita.id}" style="margin-left: 10px; z-index: 2; position: relative;">
+                            <img src="/assets/img/desfavoritado.png" class="favorito-icon" alt="Favoritar">
+                        </span>
                     </div>
                 </div>
+                <a href="detalhes.html?id=${receita.id}" class="stretched-link"></a>
             </div>
         `;
         container.appendChild(col);
     });
+
+    // Após carregar todas as receitas e adicioná-las ao DOM, configure os favoritos.
+    // As funções atualizarIconesFavoritos e configurarFavoritosAutenticados estão em auth.js
+    // Verificamos se elas existem antes de chamá-las.
+    if (typeof atualizarIconesFavoritos === 'function' && typeof configurarFavoritosAutenticados === 'function') {
+        atualizarIconesFavoritos();
+        configurarFavoritosAutenticados();
+    }
 }
 
 function exibirCards() {
-  const container = document.querySelector('#menu-dinamico > div > div');
+    const container = document.querySelector('#menu-dinamico > div > div');
     if (!container) return;
-
     container.innerHTML = '';
+    fetch('http://localhost:3000/receitasVegetarianas')
+        .then(response => response.json())
+        .then(receitas => {
+            receitas.forEach(item => {
+                const col = document.createElement('div');
+                col.className = 'col-sm-6 col-lg-3 card-separado';
+                col.innerHTML = `
+                    <div class="card dish h-100">
+                        <img src="${item.imagem}" class="dish-image" alt="${item.titulo}">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <div>
+                                <h3 class="dish-title">${item.titulo}</h3>
+                                <p class="dish-description">${item.descricao}</p>
+                            </div>
+                            <button class="btn mt-2" style="background-color: #e9a209; color: white;" onclick="window.location.href='detalhes.html?id=${item.id}'">Receita</button>
+                        </div>
+                    </div>
+                `;
+                container.appendChild(col);
+            });
+        })
+        .catch(error => {
+            container.innerHTML = '<p>Erro ao carregar receitas vegetarianas.</p>';
+            console.error('Erro ao buscar receitas vegetarianas:', error);
+        });
 
-    dadosAntigos.forEach(item => {
-        const col = document.createElement('div');
-        col.className = 'col-sm-6 col-lg-3 card-separado';
-        col.innerHTML = `
-      <div class="card dish h-100">
-        <img src="${item.imagem}" class="dish-image" alt="${item.titulo}">
-        <div class="card-body d-flex flex-column justify-content-between">
-          <div>
-            <h3 class="dish-title">${item.titulo}</h3>
-            <p class="dish-description">${item.descricao}</p>
-          </div>
-          <button class="btn mt-2" style="background-color: #e9a209; color: white;" onclick="window.location.href='detalhes.html?id=${item.id}'">Receita</button>
-        </div>
-      </div>
-    `;
-        container.appendChild(col);
-    });
+    atualizarNavbar();
 }
 
 function carregarDetalhesItem() {
     const detalhesContainer = document.getElementById('item-detalhes');
     const galeriaContainer = document.getElementById('galeria-fotos');
     if (!detalhesContainer) return;
-
     const params = new URLSearchParams(window.location.search);
     const id = params.get('id');
-    
-    let receita;
-    if (id.startsWith('old')) {
-        receita = receitasAntigas[id];
+    if (id && id.startsWith('old')) {
+        fetch(`http://localhost:3000/receitasVegetarianas/${id}`)
+            .then(response => response.json())
+            .then(receita => {
+                if (!receita) return;
+                detalhesContainer.innerHTML = `
+                    <div class="col-md-8 mx-auto text-center">
+                        <h1 class="mb-4" style="font-size: 2.5rem; color: #333;">${receita.titulo}</h1>
+                        <img src="${receita.imagem_principal || receita.imagem}" alt="${receita.titulo}" class="img-fluid rounded mb-5" style="max-width: 600px;">
+                        <div class="recipe-info mb-5">
+                            <div class="row g-4 justify-content-center">
+                                <div class="col-sm-4">
+                                    <div class="card h-100">
+                                        <div class="card-body text-center">
+                                            <i class="fas fa-clock mb-2" style="color: #e9a209; font-size: 24px;"></i>
+                                            <h5>Tempo de Preparo</h5>
+                                            <p class="mb-0">${receita.tempoPreparo}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="card h-100">
+                                        <div class="card-body text-center">
+                                            <i class="fas fa-users mb-2" style="color: #e9a209; font-size: 24px;"></i>
+                                            <h5>Porções</h5>
+                                            <p class="mb-0">${receita.porcoes}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="card h-100">
+                                        <div class="card-body text-center">
+                                            <i class="fas fa-chart-line mb-2" style="color: #e9a209; font-size: 24px;"></i>
+                                            <h5>Dificuldade</h5>
+                                            <p class="mb-0">${receita.dificuldade}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h2 style="color: #333; font-size: 2rem;" class="mb-4">Sobre a Receita</h2>
+                        <div class="mb-5">
+                            ${receita.conteudo}
+                        </div>
+                    </div>
+                `;
+                if (galeriaContainer && receita.imagens_complementares) {
+                    galeriaContainer.innerHTML = `
+                        <h3 style="color: #e9a209;" class="mb-4">Galeria de Fotos</h3>
+                        <div class="row g-4">
+                            ${receita.imagens_complementares.map(imagem => `
+                                <div class="col-sm-6 col-lg-3">
+                                    <div class="card h-100">
+                                        <img src="${imagem.src}" class="card-img-top" alt="${imagem.descricao}" style="height: 200px; object-fit: cover;">
+                                        <div class="card-body">
+                                            <p class="card-text">${imagem.descricao}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            `).join('')}
+                        </div>
+                    `;
+                } else if (galeriaContainer) {
+                    galeriaContainer.innerHTML = '';
+                }
+            })
+            .catch(error => {
+                detalhesContainer.innerHTML = '<p>Erro ao carregar detalhes da receita.</p>';
+                console.error('Erro ao buscar detalhes da receita vegetariana:', error);
+            });
     } else {
-        receita = dados.receitas.find(r => r.id == id);
-    }
-
-    if (receita) {
-        // Informações gerais da receita
-        detalhesContainer.innerHTML = `
-            <div class="col-md-8 mx-auto text-center">
-                <h1 class="mb-4" style="font-size: 2.5rem; color: #333;">${receita.titulo}</h1>
-                <img src="${receita.imagem_principal}" alt="${receita.titulo}" class="img-fluid rounded mb-5" style="max-width: 600px;">
-                
-                <div class="recipe-info mb-5">
-                    <div class="row g-4 justify-content-center">
-                        <div class="col-sm-4">
-                            <div class="card h-100">
-                                <div class="card-body text-center">
-                                    <i class="fas fa-clock mb-2" style="color: #e9a209; font-size: 24px;"></i>
-                                    <h5>Tempo de Preparo</h5>
-                                    <p class="mb-0">${receita.tempoPreparo}</p>
+        let receita = dados.receitas.find(r => r.id == id);
+        if (receita) {
+            detalhesContainer.innerHTML = `
+                <div class="col-md-8 mx-auto text-center">
+                    <h1 class="mb-4" style="font-size: 2.5rem; color: #333;">${receita.titulo}</h1>
+                    <img src="${receita.imagem_principal}" alt="${receita.titulo}" class="img-fluid rounded mb-5" style="max-width: 600px;">
+                    <div class="recipe-info mb-5">
+                        <div class="row g-4 justify-content-center">
+                            <div class="col-sm-4">
+                                <div class="card h-100">
+                                    <div class="card-body text-center">
+                                        <i class="fas fa-clock mb-2" style="color: #e9a209; font-size: 24px;"></i>
+                                        <h5>Tempo de Preparo</h5>
+                                        <p class="mb-0">${receita.tempoPreparo}</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="card h-100">
-                                <div class="card-body text-center">
-                                    <i class="fas fa-users mb-2" style="color: #e9a209; font-size: 24px;"></i>
-                                    <h5>Porções</h5>
-                                    <p class="mb-0">${receita.porcoes}</p>
+                            <div class="col-sm-4">
+                                <div class="card h-100">
+                                    <div class="card-body text-center">
+                                        <i class="fas fa-users mb-2" style="color: #e9a209; font-size: 24px;"></i>
+                                        <h5>Porções</h5>
+                                        <p class="mb-0">${receita.porcoes}</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="card h-100">
-                                <div class="card-body text-center">
-                                    <i class="fas fa-chart-line mb-2" style="color: #e9a209; font-size: 24px;"></i>
-                                    <h5>Dificuldade</h5>
-                                    <p class="mb-0">${receita.dificuldade}</p>
+                            <div class="col-sm-4">
+                                <div class="card h-100">
+                                    <div class="card-body text-center">
+                                        <i class="fas fa-chart-line mb-2" style="color: #e9a209; font-size: 24px;"></i>
+                                        <h5>Dificuldade</h5>
+                                        <p class="mb-0">${receita.dificuldade}</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <h2 style="color: #333; font-size: 2rem;" class="mb-4">Sobre a Receita</h2>
-                <div class="mb-5">
-                    ${receita.conteudo}
-                </div>
-            </div>
-        `;
-
-        if (galeriaContainer && receita.imagens_complementares) {
-            galeriaContainer.innerHTML = `
-                <h3 style="color: #e9a209;" class="mb-4">Galeria de Fotos</h3>
-                <div class="row g-4">
-                    ${receita.imagens_complementares.map(imagem => `
-                        <div class="col-sm-6 col-lg-3">
-                            <div class="card h-100">
-                                <img src="${imagem.src}" class="card-img-top" alt="${imagem.descricao}" style="height: 200px; object-fit: cover;">
-                                <div class="card-body">
-                                    <p class="card-text">${imagem.descricao}</p>
-                                </div>
-                            </div>
-                        </div>
-                    `).join('')}
+                    <h2 style="color: #333; font-size: 2rem;" class="mb-4">Sobre a Receita</h2>
+                    <div class="mb-5">
+                        ${receita.conteudo}
+                    </div>
                 </div>
             `;
-        } else if (galeriaContainer) {
-            galeriaContainer.innerHTML = '';
+            if (galeriaContainer && receita.imagens_complementares) {
+                galeriaContainer.innerHTML = `
+                    <h3 style="color: #e9a209;" class="mb-4">Galeria de Fotos</h3>
+                    <div class="row g-4">
+                        ${receita.imagens_complementares.map(imagem => `
+                            <div class="col-sm-6 col-lg-3">
+                                <div class="card h-100">
+                                    <img src="${imagem.src}" class="card-img-top" alt="${imagem.descricao}" style="height: 200px; object-fit: cover;">
+                                    <div class="card-body">
+                                        <p class="card-text">${imagem.descricao}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        `).join('')}
+                    </div>
+                `;
+            } else if (galeriaContainer) {
+                galeriaContainer.innerHTML = '';
+            }
         }
     }
 }
 
-// Inicialização das funções quando o DOM estiver carregado
 document.addEventListener('DOMContentLoaded', () => {
-    carregarDestaques();
-    carregarTodasReceitas();
-    exibirCards();
+    const titulo = document.querySelector('#titulo');
+    const imagem = document.querySelector('#imagem');
+    const conteudo = document.querySelector('#conteudo');
+
+    if (titulo && imagem && conteudo) {
+        const params = new URLSearchParams(window.location.search);
+        const id = params.get("id");
+        if (!id) return;
+
+        fetch(`http://localhost:3000/receitas/${id}`)
+            .then(response => response.json())
+            .then(receita => {
+                if (!receita) return;
+                titulo.textContent = receita.titulo;
+                imagem.src = receita.imagem || receita.imagem_principal;
+                conteudo.textContent = receita.conteudo;
+            })
+            .catch(error => console.error("Erro ao carregar receita:", error));
+    }
+});
+
+if (document.querySelector('#titulo') && document.querySelector('#imagem') && document.querySelector('#conteudo')) {
+    document.addEventListener('DOMContentLoaded', carregarDetalhesViaFetch);
+}
+
+const API_URL = 'http://localhost:3000/receitas';
+const lista = document.getElementById('lista-receitas');
+const form = document.getElementById('form-receita');
+const idInput = document.getElementById('id');
+const nomeInput = document.getElementById('nome');
+const ingredientesInput = document.getElementById('ingredientes');
+const modoInput = document.getElementById('modoDePreparo');
+const categoriaInput = document.getElementById('categoria');
+const tempoInput = document.getElementById('tempoPreparo');
+const imagemInput = document.getElementById('imagem');
+function mostrarMensagem(mensagem, tipo = 'success') {
+    const alertDiv = document.createElement('div');
+    alertDiv.className = `alert alert-${tipo} alert-dismissible fade show`;
+    alertDiv.innerHTML = `
+        ${mensagem}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    `;
+    const container = document.querySelector('.container');
+    if (container) {
+        container.insertAdjacentElement('afterbegin', alertDiv);
+    }
+    setTimeout(() => alertDiv.remove(), 3000);
+}
+
+async function carregarReceitas() {
+    try {
+        const response = await fetch(API_URL);
+        const data = await response.json();
+        
+        const lista = document.getElementById('lista-receitas');
+        if (!lista) return;
+        
+        lista.innerHTML = '';
+        data.forEach(receita => {
+            const li = document.createElement('li');
+            li.className = 'list-group-item mb-5';
+            li.innerHTML = `
+                <div class="d-flex justify-content-between align-items-start">
+                    <div class="text-start" style="flex:1;">
+                        <h5 class="mb-1">${receita.nome || receita.titulo || 'Sem nome'}</h5>
+                        <p class="mb-1"><strong>Categoria:</strong> ${receita.categoria || 'Não definida'}</p>
+                        <p class="mb-1"><strong>Tempo de Preparo:</strong> ${(receita.tempoPreparo || receita.tempo_preparo || 'Não definido')} minutos</p>
+                        <p class="mb-1"><strong>Ingredientes:</strong> ${receita.ingredientes || receita.descricao || 'Não informado'}</p>
+                        <p class="mb-1"><strong>Modo de Preparo:</strong> ${receita.modoDePreparo || (receita.conteudo ? '' : 'Não informado')}</p>
+                    </div>
+                    <button class="btn btn-danger btn-sm ms-2" style="height: 36px;" onclick="deletarReceita('${receita.id}')">
+                        <i class="fas fa-trash"></i> Excluir
+                    </button>
+                </div>
+                ${receita.conteudo && !receita.modoDePreparo ? `<div class='mt-3 text-center'>${receita.conteudo}</div>` : ''}
+            `;
+            lista.appendChild(li);
+        });
+    } catch (error) {
+        console.error('Erro ao carregar receitas:', error);
+        mostrarMensagem('Erro ao carregar receitas. Por favor, tente novamente.', 'danger');
+    }
+}
+
+if (form) {
+    form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        
+        const receita = {
+            nome: nomeInput.value,
+            ingredientes: ingredientesInput.value,
+            modoDePreparo: modoInput.value,
+            categoria: categoriaInput.value,
+            tempoPreparo: parseInt(tempoInput.value) || 0,
+            imagem: imagemInput.value,
+            avaliacao: 0,
+            numAvaliacoes: 0
+        };
+
+        try {
+            const id = idInput.value;
+            const url = id ? `${API_URL}/${id}` : API_URL;
+            const method = id ? 'PUT' : 'POST';
+
+            const response = await fetch(url, {
+                method: method,
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(receita)
+            });
+
+            if (!response.ok) throw new Error('Erro na operação');
+
+            form.reset();
+            idInput.value = '';
+            mostrarMensagem(`Receita ${id ? 'atualizada' : 'cadastrada'} com sucesso!`);
+            carregarReceitas();
+        } catch (error) {
+            console.error('Erro ao salvar receita:', error);
+            mostrarMensagem('Erro ao salvar receita. Por favor, tente novamente.', 'danger');
+        }
+    });
+}
+
+function editarReceita(id, nome, ingredientes, modo, categoria, tempo, imagem) {
+    const form = document.getElementById('form-receita');
+    if (!form) return;
+    
+    const idInput = document.getElementById('id');
+    const nomeInput = document.getElementById('nome');
+    const ingredientesInput = document.getElementById('ingredientes');
+    const modoInput = document.getElementById('modoDePreparo');
+    const categoriaInput = document.getElementById('categoria');
+    const tempoInput = document.getElementById('tempoPreparo');
+    const imagemInput = document.getElementById('imagem');
+
+    idInput.value = id;
+    nomeInput.value = nome;
+    ingredientesInput.value = ingredientes;
+    modoInput.value = modo;
+    categoriaInput.value = categoria;
+    tempoInput.value = tempo;
+    imagemInput.value = imagem;
+
+    form.scrollIntoView({ behavior: 'smooth' });
+}
+
+async function deletarReceita(id) {
+    if (!confirm('Tem certeza que deseja excluir esta receita?')) return;
+
+    try {
+        const response = await fetch(`${API_URL}/${id}`, {
+            method: 'DELETE'
+        });
+
+        if (!response.ok) throw new Error('Erro ao excluir receita');
+
+        mostrarMensagem('Receita excluída com sucesso!');
+        carregarReceitas();
+    } catch (error) {
+        console.error('Erro ao excluir receita:', error);
+        mostrarMensagem('Erro ao excluir receita. Por favor, tente novamente.', 'danger');
+    }
+}
+
+function filtrarReceitas(termo) {
+    const cards = document.querySelectorAll('#todos-itens-container .col-sm-6');
+    const termoBusca = termo.toLowerCase();
+    const searchResults = document.getElementById('search-results');
+
+    searchResults.innerHTML = '';
+    
+    if (termoBusca.length === 0) {
+        searchResults.style.display = 'none';
+        return;
+    }
+    
+    let resultadosEncontrados = false;
+    
+    cards.forEach(card => {
+        const titulo = card.querySelector('.dish-title').textContent.toLowerCase();
+        const descricao = card.querySelector('.dish-description').textContent.toLowerCase();
+        const imagem = card.querySelector('.dish-image').src;
+        const link = card.querySelector('.stretched-link').href;
+        
+        if (titulo.includes(termoBusca) || descricao.includes(termoBusca)) {
+            card.style.display = '';
+            resultadosEncontrados = true;
+            
+            const resultItem = document.createElement('div');
+            resultItem.className = 'search-result-item';
+            resultItem.innerHTML = `
+                <img src="${imagem}" alt="${titulo}">
+                <div class="result-info">
+                    <h4 class="result-title">${card.querySelector('.dish-title').textContent}</h4>
+                    <p class="result-description">${card.querySelector('.dish-description').textContent}</p>
+                </div>
+            `;
+            
+            resultItem.addEventListener('click', () => {
+                window.location.href = link;
+            });
+            
+            searchResults.appendChild(resultItem);
+        } else {
+            card.style.display = 'none';
+        }
+    });
+
+    searchResults.style.display = resultadosEncontrados ? 'block' : 'none';
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Lógica para index.html
+    const carouselDestaques = document.getElementById('carouselDestaques');
+    const todosItensContainer = document.getElementById('todos-itens-container');
+    const menuDinamico = document.getElementById('menu-dinamico');
+
+    if (carouselDestaques) {
+        carregarDestaques();
+    }
+    if (todosItensContainer) {
+        carregarTodasReceitas();
+    }
+    if (menuDinamico) {
+        exibirCards();
+    }
+
+    // Funcionalidade de busca (na navbar, presente em index.html)
+    const inputPesquisa = document.querySelector('.search__input');
+    const btnLimpar = document.querySelector('.search__button');
+    const searchResults = document.getElementById('search-results');
+
+    if (inputPesquisa && btnLimpar && searchResults) {
+        inputPesquisa.addEventListener('input', (e) => {
+            filtrarReceitas(e.target.value);
+        });
+        btnLimpar.addEventListener('click', () => {
+            inputPesquisa.value = '';
+            filtrarReceitas('');
+        });
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.search')) {
+                searchResults.style.display = 'none';
+            }
+        });
+    }
+
+    // Lógica para detalhes.html
+    if (document.getElementById('item-detalhes')) {
+        carregarDetalhesItem();
+    }
+
+    // Lógica para cadastro.html
+    const formReceita = document.getElementById('form-receita');
+    const listaReceitas = document.getElementById('lista-receitas');
+
+    if (formReceita && listaReceitas) {
+        const idInput = document.getElementById('id');
+        const nomeInput = document.getElementById('nome');
+        const ingredientesInput = document.getElementById('ingredientes');
+        const modoInput = document.getElementById('modoDePreparo');
+        const categoriaInput = document.getElementById('categoria');
+        const tempoInput = document.getElementById('tempoPreparo');
+        const imagemInput = document.getElementById('imagem');
+
+        formReceita.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const receita = {
+                nome: nomeInput.value,
+                ingredientes: ingredientesInput.value,
+                modoDePreparo: modoInput.value,
+                categoria: categoriaInput.value,
+                tempoPreparo: parseInt(tempoInput.value) || 0,
+                imagem: imagemInput.value,
+                avaliacao: 0,
+                numAvaliacoes: 0
+            };
+
+            try {
+                const id = idInput.value;
+                const url = id ? `${API_URL}/${id}` : API_URL;
+                const method = id ? 'PUT' : 'POST';
+
+                const response = await fetch(url, {
+                    method: method,
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(receita)
+                });
+
+                if (!response.ok) throw new Error('Erro na operação');
+
+                formReceita.reset();
+                idInput.value = '';
+                mostrarMensagem(`Receita ${id ? 'atualizada' : 'cadastrada'} com sucesso!`);
+                carregarReceitas();
+            } catch (error) {
+                console.error('Erro ao salvar receita:', error);
+                mostrarMensagem('Erro ao salvar receita. Por favor, tente novamente.', 'danger');
+            }
+        });
+        carregarReceitas();
+    }
 });
