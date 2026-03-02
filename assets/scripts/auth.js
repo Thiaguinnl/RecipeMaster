@@ -93,10 +93,10 @@ function atualizarIconesFavoritos() {
         const receitaId = wrapper.dataset.receitaId;
         const icon = wrapper.querySelector('.favorito-icon');
         if (usuario) {
-            icon.src = favoritos.includes(receitaId) ? '/assets/img/favoritado.png' : '/assets/img/desfavoritado.png';
+            icon.src = favoritos.includes(receitaId) ? 'assets/img/favoritado.png' : 'assets/img/desfavoritado.png';
         } else {
             // Se não houver usuário logado, todos aparecem como desfavoritados
-            icon.src = '/assets/img/desfavoritado.png';
+            icon.src = 'assets/img/desfavoritado.png';
         }
     });
 }

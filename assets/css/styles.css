@@ -158,7 +158,7 @@ main {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(/public/img/blob-path-01.png);
+    background-image: url(../img/blob-path-01.png);
     background-size: 700px;
     background-position: 10px 10px;
     background-repeat: no-repeat;

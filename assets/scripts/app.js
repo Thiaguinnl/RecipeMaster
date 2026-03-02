@@ -45,26 +45,26 @@ const dados = {
             "tempoPreparo": "45 minutos",
             "porcoes": "6 pessoas",
             "dificuldade": "Fácil",
-            "imagem_principal": "/assets/img/front-view-tasty-potatoes-along-with-cooked-vegetables-inside-white-plate-brown-surface.jpg",
+            "imagem_principal": "assets/img/front-view-tasty-potatoes-along-with-cooked-vegetables-inside-white-plate-brown-surface.jpg",
             "imagens_complementares": [
                 {
                     "id": 1,
-                    "src": "/assets/img/top-view-delicious-soup-assortment.jpg",
+                    "src": "assets/img/top-view-delicious-soup-assortment.jpg",
                     "descricao": "Sopa servida"
                 },
                 {
                     "id": 2,
-                    "src": "/assets/img/naturallis-63-61151af8212d9.jpg",
+                    "src": "assets/img/naturallis-63-61151af8212d9.jpg",
                     "descricao": "Com frango"
                 },
                 {
                     "id": 3,
-                    "src": "/assets/img/3.SOPA-DE-ABOBORA-E-GENGIBRE.jpg",
+                    "src": "assets/img/3.SOPA-DE-ABOBORA-E-GENGIBRE.jpg",
                     "descricao": "Apresentação final"
                 },
                 {
                     "id": 4,
-                    "src": "/assets/img/iStock-541305426.jpg",
+                    "src": "assets/img/iStock-541305426.jpg",
                     "descricao": "Apenas abóbora"
                 }
             ]
@@ -115,26 +115,26 @@ const dados = {
             "tempoPreparo": "1 hora e 10 minutos",
             "porcoes": "4 pessoas",
             "dificuldade": "Médio",
-            "imagem_principal": "/assets/img/classic-lasagna-with-bolognese-sauce.jpg",
+            "imagem_principal": "assets/img/classic-lasagna-with-bolognese-sauce.jpg",
             "imagens_complementares": [
                 {
                     "id": 1,
-                    "src": "/assets/img/vertical-shot-delicious-lasagna-white-plate.jpg",
+                    "src": "assets/img/vertical-shot-delicious-lasagna-white-plate.jpg",
                     "descricao": "Lasanha servida"
                 },
                 {
                     "id": 2,
-                    "src": "/assets/img/lasanha-vegetariana-tratada-imkzxnu3.jpg",
+                    "src": "assets/img/lasanha-vegetariana-tratada-imkzxnu3.jpg",
                     "descricao": "Lasanha vegetariana"
                 },
                 {
                     "id": 3,
-                    "src": "/assets/img/shutterstock-739787011.jpg",
+                    "src": "assets/img/shutterstock-739787011.jpg",
                     "descricao": "Lasanha a bolonhesa"
                 },
                 {
                     "id": 4,
-                    "src": "/assets/img/download-_1_.jpg",
+                    "src": "assets/img/download-_1_.jpg",
                     "descricao": "Lasanha de cogumelos"
                 }
             ]
@@ -186,26 +186,26 @@ const dados = {
             "tempoPreparo": "25 minutos",
             "porcoes": "2 pessoas",
             "dificuldade": "Fácil",
-            "imagem_principal": "/assets/img/delicious-chicken-tacos-with-avocado-cilantro_632498-24820-removebg-preview.png",
+            "imagem_principal": "assets/img/delicious-chicken-tacos-with-avocado-cilantro_632498-24820-removebg-preview.png",
             "imagens_complementares": [
                 {
                     "id": 1,
-                    "src": "/assets/img/tacos-frango.jpg",
+                    "src": "assets/img/tacos-frango.jpg",
                     "descricao": "Prato pronto"
                 },
                 {
                     "id": 2,
-                    "src": "/assets/img/Tacos-de-frango-com-guacamole-e-sour-cream-G-1.jpg",
+                    "src": "assets/img/Tacos-de-frango-com-guacamole-e-sour-cream-G-1.jpg",
                     "descricao": "Tacos de Frango com guacamole"
                 },
                 {
                     "id": 3,
-                    "src": "/assets/img/347923-original.jpg",
+                    "src": "assets/img/347923-original.jpg",
                     "descricao": "Tacos Mexicanos originais"
                 },
                 {
                     "id": 4,
-                    "src": "/assets/img/001_Tacos_de_carnitas,_carne_asada_y_al_pastor.jpg",
+                    "src": "assets/img/001_Tacos_de_carnitas,_carne_asada_y_al_pastor.jpg",
                     "descricao": "Empratamento dos tacos"
                 }
             ]
@@ -260,26 +260,26 @@ const dados = {
             "tempoPreparo": "1 hora e 30 minutos",
             "porcoes": "8 fatias",
             "dificuldade": "Médio",
-            "imagem_principal": "/assets/img/slice-crispy-pizza-with-meat-cheese.jpg",
+            "imagem_principal": "assets/img/slice-crispy-pizza-with-meat-cheese.jpg",
             "imagens_complementares": [
                 {
                     "id": 1,
-                    "src": "/assets/img/pizza-de-pepperoni-caseira-portal-minha-receita.jpg",
+                    "src": "assets/img/pizza-de-pepperoni-caseira-portal-minha-receita.jpg",
                     "descricao": "Pizza pepperoni servida"
                 },
                 {
                     "id": 2,
-                    "src": "/assets/img/MHEB7V2WRFDVHBXPFP6RFYZ66U.jpg",
+                    "src": "assets/img/MHEB7V2WRFDVHBXPFP6RFYZ66U.jpg",
                     "descricao": "Pizza de napolitana"
                 },
                 {
                     "id": 3,
-                    "src": "/assets/img/pizza_caseira_marguerita.webp",
+                    "src": "assets/img/pizza_caseira_marguerita.webp",
                     "descricao": "Pizza marguerita"
                 },
                 {
                     "id": 4,
-                    "src": "/assets/img/pizza-doce-capa.webp",
+                    "src": "assets/img/pizza-doce-capa.webp",
                     "descricao": "Pizza doce"
                 }
             ]
@@ -332,26 +332,26 @@ const dados = {
             "tempoPreparo": "20 minutos",
             "porcoes": "6 pessoas",
             "dificuldade": "Fácil",
-            "imagem_principal": "/assets/img/healthy-homemade-hummus-with-olive-oil-pita-chips-removebg-preview.png",
+            "imagem_principal": "assets/img/healthy-homemade-hummus-with-olive-oil-pita-chips-removebg-preview.png",
             "imagens_complementares": [
                 {
                     "id": 1,
-                    "src": "/assets/img/humus-caseiro-saudavel-com-azeite-e-pita-chips_2829-13954.jpeg",
+                    "src": "assets/img/humus-caseiro-saudavel-com-azeite-e-pita-chips_2829-13954.jpeg",
                     "descricao": "Homus caseiro servido"
                 },
                 {
                     "id": 2,
-                    "src": "/assets/img/bk-5770-homus-receita.webp",
+                    "src": "assets/img/bk-5770-homus-receita.webp",
                     "descricao": "Homus no prato"
                 },
                 {
                     "id": 3,
-                    "src": "/assets/img/bk-6853-blog-ayu3949.webp",
+                    "src": "assets/img/bk-6853-blog-ayu3949.webp",
                     "descricao": "Homus de feijão-fradinho"
                 },
                 {
                     "id": 4,
-                    "src": "/assets/img/homus-pasta-arabe-de-grao-de-bico-1.jpeg",
+                    "src": "assets/img/homus-pasta-arabe-de-grao-de-bico-1.jpeg",
                     "descricao": "Homus de pasta árabe de grão-de-bico"
                 }
             ]
@@ -401,26 +401,26 @@ const dados = {
             "tempoPreparo": "30 minutos + 4 horas de geladeira",
             "porcoes": "8 pessoas",
             "dificuldade": "Médio",
-            "imagem_principal": "/assets/img/tasty-homemade-tiramisu-cake.jpg",
+            "imagem_principal": "assets/img/tasty-homemade-tiramisu-cake.jpg",
             "imagens_complementares": [
                 {
                     "id": 1,
-                    "src": "/assets/img/1853b96b-a724-4e49-8538-26bc4739059d-removebg-preview.png",
+                    "src": "assets/img/1853b96b-a724-4e49-8538-26bc4739059d-removebg-preview.png",
                     "descricao": "Tiramisù servido"
                 },
                 {
                     "id": 2,
-                    "src": "/assets/img/deCx5v29SmPsl1IwbO75j2L7K1OaXgZM4mIeCdgV.jpeg",
+                    "src": "assets/img/deCx5v29SmPsl1IwbO75j2L7K1OaXgZM4mIeCdgV.jpeg",
                     "descricao": "Tiramisù no pote"
                 },
                 {
                     "id": 3,
-                    "src": "/assets/img/252899-shutterstock-1725360061.jpg",
+                    "src": "assets/img/252899-shutterstock-1725360061.jpg",
                     "descricao": "Tiramisù no prato"
                 },
                 {
                     "id": 4,
-                    "src": "/assets/img/1-58.jpg",
+                    "src": "assets/img/1-58.jpg",
                     "descricao": "Tiramisù decorado"
                 }
             ]
@@ -466,26 +466,26 @@ const dados = {
             "tempoPreparo": "25 minutos",
             "porcoes": "2-4 pessoas",
             "dificuldade": "Fácil",
-            "imagem_principal": "/assets/img/cropped-close-up-plate-full-fried-cheese-balls-wooden-table-dark-wall-copyspace-dish-meal-delicious-tasty-nutrition-fat-calories-unhealthy.jpg",
+            "imagem_principal": "assets/img/cropped-close-up-plate-full-fried-cheese-balls-wooden-table-dark-wall-copyspace-dish-meal-delicious-tasty-nutrition-fat-calories-unhealthy.jpg",
             "imagens_complementares": [
                 {
                     "id": 1,
-                    "src": "/assets/img/cropped-close-up-plate-full-fried-cheese-balls-wooden-table-dark-wall-copyspace-dish-meal-delicious-tasty-nutrition-fat-calories-unhealthy.jpg",
+                    "src": "assets/img/cropped-close-up-plate-full-fried-cheese-balls-wooden-table-dark-wall-copyspace-dish-meal-delicious-tasty-nutrition-fat-calories-unhealthy.jpg",
                     "descricao": "Ceviche servido"
                 },
                 {
                     "id": 2,
-                    "src": "/assets/img/ceviche_de_camarao_especial_1493735830346.jpg",
+                    "src": "assets/img/ceviche_de_camarao_especial_1493735830346.jpg",
                     "descricao": "Ceviche de Camarão Especial"
                 },
                 {
                     "id": 3,
-                    "src": "/assets/img/ceviche.jpg",
+                    "src": "assets/img/ceviche.jpg",
                     "descricao": "Ceviche Tradicional"
                 },
                 {
                     "id": 4,
-                    "src": "/assets/img/high-angle-cup-with-delicious-esquites-lime.jpg",
+                    "src": "assets/img/high-angle-cup-with-delicious-esquites-lime.jpg",
                     "descricao": "Ceviche com Limão"
                 }
             ]
@@ -535,26 +535,26 @@ const dados = {
             "tempoPreparo": "45 minutos",
             "porcoes": "2 pessoas",
             "dificuldade": "Médio",
-            "imagem_principal": "/assets/img/dish.png",
+            "imagem_principal": "assets/img/dish.png",
             "imagens_complementares": [
                 {
                     "id": 1,
-                    "src": "/assets/img/Poke-bowl-estilo-nordico1.jpg",
+                    "src": "assets/img/Poke-bowl-estilo-nordico1.jpg",
                     "descricao": "Bowl estilo nordico com salmão e mirtilo"
                 },
                 {
                     "id": 2,
-                    "src": "/assets/img/7434-SITE-PROJETO-1120-scaled.jpg",
+                    "src": "assets/img/7434-SITE-PROJETO-1120-scaled.jpg",
                     "descricao": "Bowl com legumes e frango"
                 },
                 {
                     "id": 3,
-                    "src": "/assets/img/228-q-4825-picadinho-oriental-em-uma-panela-so.webp",
+                    "src": "assets/img/228-q-4825-picadinho-oriental-em-uma-panela-so.webp",
                     "descricao": "Bowl com picadinho oriental"
                 },
                 {
                     "id": 4,
-                    "src": "/assets/img/Bowl_Arroz_Negro_Camarao_Salteado.jpg",
+                    "src": "assets/img/Bowl_Arroz_Negro_Camarao_Salteado.jpg",
                     "descricao": "Bowl com arroz negro e camarão salteado"
                 }
             ]
@@ -599,26 +599,26 @@ const dados = {
             "tempoPreparo": "15 minutos",
             "porcoes": "2 pessoas",
             "dificuldade": "Fácil",
-            "imagem_principal": "/assets/img/dish2.png",
+            "imagem_principal": "assets/img/dish2.png",
             "imagens_complementares": [
                 {
                     "id": 1,
-                    "src": "/assets/img/istock-155388694-1.jpg",
+                    "src": "assets/img/istock-155388694-1.jpg",
                     "descricao": "Misto quente servido"
                 },
                 {
                     "id": 2,
-                    "src": "/assets/img/istock-1313739997-e1690315827805.jpg",
+                    "src": "assets/img/istock-1313739997-e1690315827805.jpg",
                     "descricao": "Misto quente com cheddar"
                 },
                 {
                     "id": 3,
-                    "src": "/assets/img/69893dd5-83a3-435b-88f6-7e5bf10d4e1b.jpg",
+                    "src": "assets/img/69893dd5-83a3-435b-88f6-7e5bf10d4e1b.jpg",
                     "descricao": "Misto quente com ovo e bacon"
                 },
                 {
                     "id": 4,
-                    "src": "/assets/img/202203141716_LJKS_i.jpeg",
+                    "src": "assets/img/202203141716_LJKS_i.jpeg",
                     "descricao": "Misto quente com pão francês"
                 }
             ]
@@ -663,26 +663,26 @@ const dados = {
             "tempoPreparo": "10 minutos",
             "porcoes": "2 pessoas",
             "dificuldade": "Fácil",
-            "imagem_principal": "/assets/img/dish3.png",
+            "imagem_principal": "assets/img/dish3.png",
             "imagens_complementares": [
                 {
                     "id": 1,
-                    "src": "/assets/img/smoothie-de-kiwi-com-chia.jpeg",
+                    "src": "assets/img/smoothie-de-kiwi-com-chia.jpeg",
                     "descricao": "Smoothie de kiwi servido"
                 },
                 {
                     "id": 2,
-                    "src": "/assets/img/smoothie-banana-kiwi.jpg",
+                    "src": "assets/img/smoothie-banana-kiwi.jpg",
                     "descricao": "Smoothie morango com kiwi"
                 },
                 {
                     "id": 3,
-                    "src": "/assets/img/Mango-Kiwi-Smoothie-Evergreen-Kitchen-1.jpg",
+                    "src": "assets/img/Mango-Kiwi-Smoothie-Evergreen-Kitchen-1.jpg",
                     "descricao": "Smoothie de manga"
                 },
                 {
                     "id": 4,
-                    "src": "/assets/img/blueberry-kiwi-smoothie_web-6.jpg",
+                    "src": "assets/img/blueberry-kiwi-smoothie_web-6.jpg",
                     "descricao": "Smoothie de mirtilo"
                 }
             ]
@@ -730,26 +730,26 @@ const dados = {
             "tempoPreparo": "30 minutos",
             "porcoes": "4 pessoas",
             "dificuldade": "Médio",
-            "imagem_principal": "/assets/img/dish4.png",
+            "imagem_principal": "assets/img/dish4.png",
             "imagens_complementares": [
                 {
                     "id": 1,
-                    "src": "/assets/img/yakisoba-scaled.jpg",
+                    "src": "assets/img/yakisoba-scaled.jpg",
                     "descricao": "Yakisoba servido"
                 },
                 {
                     "id": 2,
-                    "src": "/assets/img/Yakisoba-de-frango-G.jpg",
+                    "src": "assets/img/Yakisoba-de-frango-G.jpg",
                     "descricao": "Yakisoba tradicional"
                 },
                 {
                     "id": 3,
-                    "src": "/assets/img/renata-imagem-receitas-yakisoba-share.jpg",
+                    "src": "assets/img/renata-imagem-receitas-yakisoba-share.jpg",
                     "descricao": "Yakisoba com macarrão instantâneo"
                 },
                 {
                     "id": 4,
-                    "src": "/assets/img/ddda0b8f9e045fe1198e.webp",
+                    "src": "assets/img/ddda0b8f9e045fe1198e.webp",
                     "descricao": "Yakisoba com Camarão"
                 }
             ]
@@ -805,26 +805,26 @@ const dados = {
             "tempoPreparo": "35 minutos",
             "porcoes": "2 pessoas",
             "dificuldade": "Médio",
-            "imagem_principal": "/assets/img/186be9f9-cbd1-4d0a-920b-10df43324008-removebg-preview.png",
+            "imagem_principal": "assets/img/186be9f9-cbd1-4d0a-920b-10df43324008-removebg-preview.png",
             "imagens_complementares": [
                 {
                     "id": 1,
-                    "src": "/assets/img/renata-imagem-receitas-nhoque-de-batata-share.jpg",
+                    "src": "assets/img/renata-imagem-receitas-nhoque-de-batata-share.jpg",
                     "descricao": "Nhoque de Batata-Doce servido"
                 },
                 {
                     "id": 2,
-                    "src": "/assets/img/nhoque-molho-bolonhesa.jpeg",
+                    "src": "assets/img/nhoque-molho-bolonhesa.jpeg",
                     "descricao": "Nhoque molho bolonhesa"
                 },
                 {
                     "id": 3,
-                    "src": "/assets/img/12bc46f1ff632ff3a42d461b74f7aa26.jpeg",
+                    "src": "assets/img/12bc46f1ff632ff3a42d461b74f7aa26.jpeg",
                     "descricao": "Nhoque molho branco"
                 },
                 {
                     "id": 4,
-                    "src": "/assets/img/como-fazer-nhoque-topo.jpg",
+                    "src": "assets/img/como-fazer-nhoque-topo.jpg",
                     "descricao": "Nhoque de Camarão"
                 }
             ]
@@ -834,18 +834,18 @@ const dados = {
 
 // Dados das imagens para a seção Todas as Receitas
 const imagensTodasReceitas = {
-    "Sopa de Abóbora com Gengibre": "/assets/img/12905643-removebg-preview.png",
-    "Lasanha de Berinjela Low-Carb": "/assets/img/10458317-removebg-preview.png",
-    "Tacos de Frango": "/assets/img/delicious-chicken-tacos-with-avocado-cilantro_632498-24820-removebg-preview.png",
-    "Pizza de Pepperoni Clássica": "/assets/img/057f1b6c-ec55-47d9-8275-cabf3479c3fe-removebg-preview.png",
-    "Homus Caseiro com Azeite e Pita Chips": "/assets/img/healthy-homemade-hummus-with-olive-oil-pita-chips-removebg-preview.png",
-    "Tiramisù com Ovomaltine": "/assets/img/1853b96b-a724-4e49-8538-26bc4739059d-removebg-preview.png",
-    "Ceviche Clássico Peruano": "/assets/img/ceviche-png-with-transparent-background_484256-921-removebg-preview.png",
-    "Bowl asiático": "/assets/img/dish.png",
-    "Misto quente": "/assets/img/dish2.png",
-    "Smoothie de kiwi": "/assets/img/dish3.png",
-    "Yakisoba": "/assets/img/dish4.png",
-    "Nhoque de Batata-Doce": "/assets/img/186be9f9-cbd1-4d0a-920b-10df43324008-removebg-preview.png"
+    "Sopa de Abóbora com Gengibre": "assets/img/12905643-removebg-preview.png",
+    "Lasanha de Berinjela Low-Carb": "assets/img/10458317-removebg-preview.png",
+    "Tacos de Frango": "assets/img/delicious-chicken-tacos-with-avocado-cilantro_632498-24820-removebg-preview.png",
+    "Pizza de Pepperoni Clássica": "assets/img/057f1b6c-ec55-47d9-8275-cabf3479c3fe-removebg-preview.png",
+    "Homus Caseiro com Azeite e Pita Chips": "assets/img/healthy-homemade-hummus-with-olive-oil-pita-chips-removebg-preview.png",
+    "Tiramisù com Ovomaltine": "assets/img/1853b96b-a724-4e49-8538-26bc4739059d-removebg-preview.png",
+    "Ceviche Clássico Peruano": "assets/img/ceviche-png-with-transparent-background_484256-921-removebg-preview.png",
+    "Bowl asiático": "assets/img/dish.png",
+    "Misto quente": "assets/img/dish2.png",
+    "Smoothie de kiwi": "assets/img/dish3.png",
+    "Yakisoba": "assets/img/dish4.png",
+    "Nhoque de Batata-Doce": "assets/img/186be9f9-cbd1-4d0a-920b-10df43324008-removebg-preview.png"
 };
 
 function carregarDestaques() {
@@ -961,7 +961,7 @@ function carregarTodasReceitas() {
                         <i class="fa-solid fa-star"></i>
                         <span>(500+)</span>
                         <span class="favorito-wrapper" data-receita-id="${receita.id}" style="margin-left: 10px; z-index: 2; position: relative;">
-                            <img src="/assets/img/desfavoritado.png" class="favorito-icon" alt="Favoritar">
+                            <img src="assets/img/desfavoritado.png" class="favorito-icon" alt="Favoritar">
                         </span>
                     </div>
                 </div>
