@@ -830,7 +830,85 @@ const dados = {
             ]
         }
     ]
-}
+};
+
+// Receitas "vegetarianas" antigas usadas apenas na seção
+// "Para os frangarianos." e na página de detalhes.
+const receitasVegetarianas = [
+    {
+        id: 'old1',
+        titulo: 'Wrap Crispy Tex Mex',
+        descricao: 'Frango crocante, mix de verdes, cenoura, milho, ovo de codorna, parmesão em lascas e molho buffalo ranch.',
+        conteudo: `Ingredientes:
+- 2 tortilhas de trigo grandes
+- 200g de frango empanado crocante
+- 1 xícara de mix de folhas verdes
+- ½ xícara de cenoura ralada
+- ½ xícara de milho
+- 6 ovos de codorna
+- ¼ xícara de lascas de parmesão
+- 4 colheres de molho Buffalo Ranch
+
+Modo de Preparo:
+1. Cozinhe os ovos de codorna
+2. Aqueça as tortillas
+3. Monte o wrap com todos os ingredientes
+4. Enrole e sirva`,
+        categoria: 'Entrada',
+        tempoPreparo: '45 minutos',
+        porcoes: '2 pessoas',
+        dificuldade: 'Fácil',
+        imagem_principal: 'assets/img/wrap-crispy-tex-mex-franquia-boali-alimentacao-saudavel-removebg-preview.png'
+    },
+    {
+        id: 'old2',
+        titulo: 'Salada Honey Crispy Chicken',
+        descricao: 'Alface americana, frango crocante, tomate, palmito ao pesto, gorgonzola, cebola crocante e molho mostarda e mel.',
+        conteudo: `Ingredientes:
+- 2 pés de alface americana
+- 2 filés de frango empanados
+- 2 tomates médios
+- 200g de palmito pupunha
+- 100g de queijo gorgonzola
+- ½ xícara de cebola crocante
+- 4 colheres de molho mostarda e mel
+- 2 colheres de pesto
+
+Modo de Preparo:
+1. Prepare o frango empanado
+2. Misture o palmito com pesto
+3. Monte a salada com todos os ingredientes
+4. Finalize com o molho`,
+        categoria: 'Entrada',
+        tempoPreparo: '50 minutos',
+        porcoes: '2 pessoas',
+        dificuldade: 'Fácil',
+        imagem_principal: 'assets/img/nova-salada-honey-crysp-chicken-removebg-preview.png'
+    },
+    {
+        id: 'old3',
+        titulo: 'Sanduba Frango Crocante',
+        descricao: 'Frango crocante, alface americana, gorgonzola, molho caesar e buffalo ranch.',
+        conteudo: `Ingredientes:
+- 2 pães tipo brioche
+- 2 filés de frango empanados
+- 4 folhas de alface americana
+- 100g de queijo gorgonzola
+- 4 colheres de molho caesar
+- 4 colheres de molho buffalo
+
+Modo de Preparo:
+1. Prepare o frango empanado
+2. Toaste os pães
+3. Monte o sanduíche com todos os ingredientes
+4. Sirva quente`,
+        categoria: 'Entrada',
+        tempoPreparo: '20 minutos',
+        porcoes: '2 pessoas',
+        dificuldade: 'Fácil',
+        imagem_principal: 'assets/img/sanduba-frango-crocante-removebg-preview.png'
+    }
+];
 
 // Dados das imagens para a seção Todas as Receitas
 const imagensTodasReceitas = {
@@ -985,10 +1063,7 @@ function exibirCards() {
     if (!container) return;
     container.innerHTML = '';
 
-    const idsVegetarianas = ['rec2', 'rec5', 'rec12'];
-    const receitasParaFrangarianos = dados.receitas.filter(
-        receita => idsVegetarianas.includes(receita.id)
-    );
+    const receitasParaFrangarianos = receitasVegetarianas;
 
     receitasParaFrangarianos.forEach(receita => {
         const col = document.createElement('div');
@@ -1017,7 +1092,9 @@ function carregarDetalhesItem() {
     if (!detalhesContainer) return;
     const params = new URLSearchParams(window.location.search);
     const id = params.get('id');
-    const receita = dados.receitas.find(r => r.id == id);
+    const receita =
+        dados.receitas.find(r => r.id == id) ||
+        receitasVegetarianas.find(r => r.id == id);
     if (!receita) {
         detalhesContainer.innerHTML = `
             <div class="col-12 text-center">
