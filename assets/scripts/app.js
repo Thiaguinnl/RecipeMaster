@@ -1017,140 +1017,79 @@ function carregarDetalhesItem() {
     if (!detalhesContainer) return;
     const params = new URLSearchParams(window.location.search);
     const id = params.get('id');
-    if (id && id.startsWith('old')) {
-        fetch(`http://localhost:3000/receitasVegetarianas/${id}`)
-            .then(response => response.json())
-            .then(receita => {
-                if (!receita) return;
-                detalhesContainer.innerHTML = `
-                    <div class="col-md-8 mx-auto text-center">
-                        <h1 class="mb-4" style="font-size: 2.5rem; color: #333;">${receita.titulo}</h1>
-                        <img src="${receita.imagem_principal || receita.imagem}" alt="${receita.titulo}" class="img-fluid rounded mb-5" style="max-width: 600px;">
-                        <div class="recipe-info mb-5">
-                            <div class="row g-4 justify-content-center">
-                                <div class="col-sm-4">
-                                    <div class="card h-100">
-                                        <div class="card-body text-center">
-                                            <i class="fas fa-clock mb-2" style="color: #e9a209; font-size: 24px;"></i>
-                                            <h5>Tempo de Preparo</h5>
-                                            <p class="mb-0">${receita.tempoPreparo}</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-4">
-                                    <div class="card h-100">
-                                        <div class="card-body text-center">
-                                            <i class="fas fa-users mb-2" style="color: #e9a209; font-size: 24px;"></i>
-                                            <h5>Porções</h5>
-                                            <p class="mb-0">${receita.porcoes}</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-4">
-                                    <div class="card h-100">
-                                        <div class="card-body text-center">
-                                            <i class="fas fa-chart-line mb-2" style="color: #e9a209; font-size: 24px;"></i>
-                                            <h5>Dificuldade</h5>
-                                            <p class="mb-0">${receita.dificuldade}</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <h2 style="color: #333; font-size: 2rem;" class="mb-4">Sobre a Receita</h2>
-                        <div class="mb-5">
-                            ${receita.conteudo}
-                        </div>
-                    </div>
-                `;
-                if (galeriaContainer && receita.imagens_complementares) {
-                    galeriaContainer.innerHTML = `
-                        <h3 style="color: #e9a209;" class="mb-4">Galeria de Fotos</h3>
-                        <div class="row g-4">
-                            ${receita.imagens_complementares.map(imagem => `
-                                <div class="col-sm-6 col-lg-3">
-                                    <div class="card h-100">
-                                        <img src="${imagem.src}" class="card-img-top" alt="${imagem.descricao}" style="height: 200px; object-fit: cover;">
-                                        <div class="card-body">
-                                            <p class="card-text">${imagem.descricao}</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            `).join('')}
-                        </div>
-                    `;
-                } else if (galeriaContainer) {
-                    galeriaContainer.innerHTML = '';
-                }
-            })
-            .catch(error => {
-                detalhesContainer.innerHTML = '<p>Erro ao carregar detalhes da receita.</p>';
-                console.error('Erro ao buscar detalhes da receita vegetariana:', error);
-            });
-    } else {
-        let receita = dados.receitas.find(r => r.id == id);
-        if (receita) {
-            detalhesContainer.innerHTML = `
-                <div class="col-md-8 mx-auto text-center">
-                    <h1 class="mb-4" style="font-size: 2.5rem; color: #333;">${receita.titulo}</h1>
-                    <img src="${receita.imagem_principal}" alt="${receita.titulo}" class="img-fluid rounded mb-5" style="max-width: 600px;">
-                    <div class="recipe-info mb-5">
-                        <div class="row g-4 justify-content-center">
-                            <div class="col-sm-4">
-                                <div class="card h-100">
-                                    <div class="card-body text-center">
-                                        <i class="fas fa-clock mb-2" style="color: #e9a209; font-size: 24px;"></i>
-                                        <h5>Tempo de Preparo</h5>
-                                        <p class="mb-0">${receita.tempoPreparo}</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-4">
-                                <div class="card h-100">
-                                    <div class="card-body text-center">
-                                        <i class="fas fa-users mb-2" style="color: #e9a209; font-size: 24px;"></i>
-                                        <h5>Porções</h5>
-                                        <p class="mb-0">${receita.porcoes}</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-4">
-                                <div class="card h-100">
-                                    <div class="card-body text-center">
-                                        <i class="fas fa-chart-line mb-2" style="color: #e9a209; font-size: 24px;"></i>
-                                        <h5>Dificuldade</h5>
-                                        <p class="mb-0">${receita.dificuldade}</p>
-                                    </div>
-                                </div>
+    const receita = dados.receitas.find(r => r.id == id);
+    if (!receita) {
+        detalhesContainer.innerHTML = `
+            <div class="col-12 text-center">
+                <h2 class="mb-3">Receita não encontrada</h2>
+                <p class="text-muted mb-4">Parece que esse link está inválido ou a receita foi removida.</p>
+                <a href="index.html" class="btn btn-warning">Voltar para a Home</a>
+            </div>
+        `;
+        if (galeriaContainer) galeriaContainer.innerHTML = '';
+        return;
+    }
+
+    detalhesContainer.innerHTML = `
+        <div class="col-md-8 mx-auto text-center">
+            <h1 class="mb-4" style="font-size: 2.5rem; color: #333;">${receita.titulo}</h1>
+            <img src="${receita.imagem_principal}" alt="${receita.titulo}" class="img-fluid rounded mb-5" style="max-width: 600px;">
+            <div class="recipe-info mb-5">
+                <div class="row g-4 justify-content-center">
+                    <div class="col-sm-4">
+                        <div class="card h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-clock mb-2" style="color: #e9a209; font-size: 24px;"></i>
+                                <h5>Tempo de Preparo</h5>
+                                <p class="mb-0">${receita.tempoPreparo}</p>
                             </div>
                         </div>
                     </div>
-                    <h2 style="color: #333; font-size: 2rem;" class="mb-4">Sobre a Receita</h2>
-                    <div class="mb-5">
-                        ${receita.conteudo}
+                    <div class="col-sm-4">
+                        <div class="card h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-users mb-2" style="color: #e9a209; font-size: 24px;"></i>
+                                <h5>Porções</h5>
+                                <p class="mb-0">${receita.porcoes}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-chart-line mb-2" style="color: #e9a209; font-size: 24px;"></i>
+                                <h5>Dificuldade</h5>
+                                <p class="mb-0">${receita.dificuldade}</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            `;
-            if (galeriaContainer && receita.imagens_complementares) {
-                galeriaContainer.innerHTML = `
-                    <h3 style="color: #e9a209;" class="mb-4">Galeria de Fotos</h3>
-                    <div class="row g-4">
-                        ${receita.imagens_complementares.map(imagem => `
-                            <div class="col-sm-6 col-lg-3">
-                                <div class="card h-100">
-                                    <img src="${imagem.src}" class="card-img-top" alt="${imagem.descricao}" style="height: 200px; object-fit: cover;">
-                                    <div class="card-body">
-                                        <p class="card-text">${imagem.descricao}</p>
-                                    </div>
-                                </div>
+            </div>
+            <h2 style="color: #333; font-size: 2rem;" class="mb-4">Sobre a Receita</h2>
+            <div class="mb-5">
+                ${receita.conteudo}
+            </div>
+        </div>
+    `;
+
+    if (galeriaContainer && receita.imagens_complementares) {
+        galeriaContainer.innerHTML = `
+            <h3 style="color: #e9a209;" class="mb-4">Galeria de Fotos</h3>
+            <div class="row g-4">
+                ${receita.imagens_complementares.map(imagem => `
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="card h-100">
+                            <img src="${imagem.src}" class="card-img-top" alt="${imagem.descricao}" style="height: 200px; object-fit: cover;">
+                            <div class="card-body">
+                                <p class="card-text">${imagem.descricao}</p>
                             </div>
-                        `).join('')}
+                        </div>
                     </div>
-                `;
-            } else if (galeriaContainer) {
-                galeriaContainer.innerHTML = '';
-            }
-        }
+                `).join('')}
+            </div>
+        `;
+    } else if (galeriaContainer) {
+        galeriaContainer.innerHTML = '';
     }
 }
 
