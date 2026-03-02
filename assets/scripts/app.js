@@ -985,9 +985,9 @@ function exibirCards() {
     if (!container) return;
     container.innerHTML = '';
 
-    // Usar receitas já carregadas no objeto "dados"
+    const idsVegetarianas = ['rec2', 'rec5', 'rec12'];
     const receitasParaFrangarianos = dados.receitas.filter(
-        receita => receita.categoria === 'Pratos Principais'
+        receita => idsVegetarianas.includes(receita.id)
     );
 
     receitasParaFrangarianos.forEach(receita => {
