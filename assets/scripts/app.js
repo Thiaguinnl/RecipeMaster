@@ -984,31 +984,29 @@ function exibirCards() {
     const container = document.querySelector('#menu-dinamico > div > div');
     if (!container) return;
     container.innerHTML = '';
-    fetch('http://localhost:3000/receitasVegetarianas')
-        .then(response => response.json())
-        .then(receitas => {
-            receitas.forEach(item => {
-                const col = document.createElement('div');
-                col.className = 'col-sm-6 col-lg-3 card-separado';
-                col.innerHTML = `
-                    <div class="card dish h-100">
-                        <img src="${item.imagem}" class="dish-image" alt="${item.titulo}">
-                        <div class="card-body d-flex flex-column justify-content-between">
-                            <div>
-                                <h3 class="dish-title">${item.titulo}</h3>
-                                <p class="dish-description">${item.descricao}</p>
-                            </div>
-                            <button class="btn mt-2" style="background-color: #e9a209; color: white;" onclick="window.location.href='detalhes.html?id=${item.id}'">Receita</button>
-                        </div>
+
+    // Usar receitas já carregadas no objeto "dados"
+    const receitasParaFrangarianos = dados.receitas.filter(
+        receita => receita.categoria === 'Pratos Principais'
+    );
+
+    receitasParaFrangarianos.forEach(receita => {
+        const col = document.createElement('div');
+        col.className = 'col-sm-6 col-lg-3 card-separado';
+        col.innerHTML = `
+            <div class="card dish h-100">
+                <img src="${receita.imagem_principal}" class="dish-image" alt="${receita.titulo}">
+                <div class="card-body d-flex flex-column justify-content-between">
+                    <div>
+                        <h3 class="dish-title">${receita.titulo}</h3>
+                        <p class="dish-description">${receita.descricao}</p>
                     </div>
-                `;
-                container.appendChild(col);
-            });
-        })
-        .catch(error => {
-            container.innerHTML = '<p>Erro ao carregar receitas vegetarianas.</p>';
-            console.error('Erro ao buscar receitas vegetarianas:', error);
-        });
+                    <button class="btn mt-2" style="background-color: #e9a209; color: white;" onclick="window.location.href='detalhes.html?id=${receita.id}'">Receita</button>
+                </div>
+            </div>
+        `;
+        container.appendChild(col);
+    });
 
     atualizarNavbar();
 }
@@ -1156,31 +1154,7 @@ function carregarDetalhesItem() {
     }
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-    const titulo = document.querySelector('#titulo');
-    const imagem = document.querySelector('#imagem');
-    const conteudo = document.querySelector('#conteudo');
-
-    if (titulo && imagem && conteudo) {
-        const params = new URLSearchParams(window.location.search);
-        const id = params.get("id");
-        if (!id) return;
-
-        fetch(`http://localhost:3000/receitas/${id}`)
-            .then(response => response.json())
-            .then(receita => {
-                if (!receita) return;
-                titulo.textContent = receita.titulo;
-                imagem.src = receita.imagem || receita.imagem_principal;
-                conteudo.textContent = receita.conteudo;
-            })
-            .catch(error => console.error("Erro ao carregar receita:", error));
-    }
-});
-
-if (document.querySelector('#titulo') && document.querySelector('#imagem') && document.querySelector('#conteudo')) {
-    document.addEventListener('DOMContentLoaded', carregarDetalhesViaFetch);
-}
+// Bloco antigo que dependia de API em localhost removido para funcionar no GitHub Pages
 
 const API_URL = 'http://localhost:3000/receitas';
 const lista = document.getElementById('lista-receitas');
